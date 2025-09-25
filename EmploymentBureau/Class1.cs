@@ -66,6 +66,12 @@ namespace EmploymentBureau
 			get => building_;
 			set => building_ = value;
 		}
+
+		public override string ToString() 
+		{
+			var building_str = (building != "") ? $" Строение {building}" : "";
+			return region + ' ' + city + ' ' + street + " " + house + building_str );
+		}
 	}
 
 	public class Employee : IValidatable
