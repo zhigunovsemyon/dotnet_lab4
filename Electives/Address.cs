@@ -1,12 +1,12 @@
 ﻿namespace Electives
 {
-	internal class Address
+	internal class Address : IValidatable
 	{
-		string region_;
-		string city_;
-		string street_;
-		string house_;
-		string building_;
+		string region_ = "";
+		string city_ = "";
+		string street_ = "";
+		string house_ = "";
+		string building_ = "";
 
 		/// <summary>
 		/// Адрес 
@@ -16,7 +16,7 @@
 		/// <param name="street">Улица</param>
 		/// <param name="house">Дом</param>
 		/// <param name="building">Номер строения</param>
-		Address(string region, string city, string street,
+		public Address(string region, string city, string street,
 			string house, string building = "")
 		{
 			this.region_ = region;
@@ -25,6 +25,11 @@
 			this.house_ = house;
 			this.building_ = building;
 		}
+
+		/// <summary>
+		/// Конструктор пустого адреса
+		/// </summary>
+		public Address() { }
 
 		public string region
 		{
@@ -55,5 +60,13 @@
 			get => building_;
 			set => building_ = value;
 		}
+
+		private bool strings_not_null => building != null
+			&& house != null && street != null && region != null;
+		
+		private bool strings_not_empty => house != ""
+			&& street != "" && region != "";
+
+		public bool IsValid => this.strings_not_null && this.strings_not_empty;
 	}
 }
