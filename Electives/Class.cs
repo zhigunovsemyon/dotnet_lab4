@@ -1,6 +1,6 @@
 ﻿namespace Electives
 {
-	internal class Class
+	internal class Class : IValidatable
 	{
 		string name_ = "";
 		int lections_ = 0;
@@ -26,5 +26,7 @@
 			this.practices_ = practices;
 			this.lab_works_ = lab_works;
 		}
+
+		public bool IsValid => this.name_ != null && this.name_ != "";
 	}
 }
