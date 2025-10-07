@@ -61,5 +61,12 @@
 		/// Количество лабораторных работ
 		/// </summary>
 		int lab_works { get => lab_works_; set => lab_works_ = value; }
+
+		public override string ToString()
+		{
+			return $"{name}: лекций:{lections}, " +
+				$"практик {practices}, " +
+				$"лабораторных работ {lab_works}";
+		}
 	}
 }
