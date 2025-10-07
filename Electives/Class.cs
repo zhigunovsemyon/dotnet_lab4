@@ -30,8 +30,17 @@
 		/// <summary>
 		/// Должно быть имя и хотя бы одно занятие любого типа
 		/// </summary>
-		public bool IsValid => this.name_ != null && this.name_ != ""
-			&& (this.lections + this.lab_works + this.practices) != 0;
+		public bool IsValid
+		{
+			get
+			{
+				if (this.name_ == null)
+					return false;
+
+				return this.name_ != "" &&
+					(this.lections + this.lab_works + this.practices) != 0;
+			}
+		}
 
 		/// <summary>
 		/// Название предмета
