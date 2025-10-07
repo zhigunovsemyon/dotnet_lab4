@@ -35,7 +35,16 @@
 
 		private bool empty_valid => name_ != "" && surname_ != "" && phone_ != "";
 
-		public bool IsValid => this.null_valid && this.empty_valid && address_.IsValid;
+		public bool IsValid
+		{
+			get
+			{
+				if (this.null_valid)
+					return this.empty_valid && address_.IsValid;
+				else 
+					return false;
+			}
+		}
 
 		/// <summary>
 		/// Имя студента
