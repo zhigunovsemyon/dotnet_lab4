@@ -19,7 +19,7 @@
 		/// <param name="lections">Объём лекционных занятий</param>
 		/// <param name="practices">Объём практик</param>
 		/// <param name="lab_works">Объём лабораторных работ</param>
-		public Class(string name, int lections, int practices, int lab_works) 
+		public Class(string name, int lections, int practices, int lab_works)
 		{
 			this.name_ = name;
 			this.lections_ = lections;
@@ -27,23 +27,27 @@
 			this.lab_works_ = lab_works;
 		}
 
-		public bool IsValid => this.name_ != null && this.name_ != "";
+		/// <summary>
+		/// Должно быть имя и хотя бы одно занятие любого типа
+		/// </summary>
+		public bool IsValid => this.name_ != null && this.name_ != ""
+			&& (this.lections + this.lab_works + this.practices) != 0;
 
 		/// <summary>
 		/// Название предмета
 		/// </summary>
-		string name {get => name_; set => name_ = value; }
-		
+		string name { get => name_; set => name_ = value; }
+
 		/// <summary>
 		/// Количество лекций
 		/// </summary>
 		int lections { get => lections_; set => lections_ = value; }
-		
+
 		/// <summary>
 		/// Количество практик
 		/// </summary>
-		int practices { get => practices_; set => practices_ = value;}
-		
+		int practices { get => practices_; set => practices_ = value; }
+
 		/// <summary>
 		/// Количество лабораторных работ
 		/// </summary>
