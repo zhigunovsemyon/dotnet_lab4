@@ -63,10 +63,19 @@
 
 		private bool strings_not_null => building != null
 			&& house != null && street != null && region != null;
-		
+
 		private bool strings_not_empty => house != ""
 			&& street != "" && region != "";
 
-		public bool IsValid => this.strings_not_null && this.strings_not_empty;
+		public bool IsValid 
+		{ 
+			get 
+			{ 
+				if (this.strings_not_null) 
+					return this.strings_not_empty;
+				else 
+					return false;
+			} 
+		}
 	}
 }
