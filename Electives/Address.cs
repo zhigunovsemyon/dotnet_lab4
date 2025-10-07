@@ -61,21 +61,10 @@
 			set => building_ = value;
 		}
 
-		private bool strings_not_null => building != null
-			&& house != null && street != null && region != null;
-
-		private bool strings_not_empty => house != ""
-			&& street != "" && region != "";
-
-		public bool IsValid 
-		{ 
-			get 
-			{ 
-				if (this.strings_not_null) 
-					return this.strings_not_empty;
-				else 
-					return false;
-			} 
-		}
+		public bool IsValid => !(string.IsNullOrWhiteSpace(region_) || 
+			string.IsNullOrWhiteSpace(city_) ||
+			string.IsNullOrWhiteSpace(street_) ||
+			string.IsNullOrWhiteSpace(house_) ||
+			(building == null));		
 	}
 }
