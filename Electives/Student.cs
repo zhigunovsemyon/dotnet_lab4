@@ -30,21 +30,13 @@
 			this.phone_ = phone;
 			this.address_ = address;
 		}
-		private bool null_valid => name_ != null && surname_ != null
-			&& phone_ != null && patronim_ != null;
-
-		private bool empty_valid => name_ != "" && surname_ != "" && phone_ != "";
-
-		public bool IsValid
-		{
-			get
-			{
-				if (this.null_valid)
-					return this.empty_valid && address_.IsValid;
-				else 
-					return false;
-			}
-		}
+		
+		public bool IsValid => this.Address.IsValid && !(
+			string.IsNullOrWhiteSpace(this.Name) ||
+			string.IsNullOrWhiteSpace(this.Surname) ||
+			string.IsNullOrWhiteSpace(this.Phone) ||
+			this.patronim_ == null
+		);
 
 		/// <summary>
 		/// Имя студента
