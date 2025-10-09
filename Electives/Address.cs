@@ -1,6 +1,6 @@
 ﻿namespace Electives
 {
-	internal class Address : IValidatable
+	public class Address : IValidatable
 	{
 		/// <summary>
 		/// Адрес 
