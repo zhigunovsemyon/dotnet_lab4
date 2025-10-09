@@ -22,7 +22,7 @@
 		public Plan () { }
 
 		/// <summary>Конструктор с уже заданной оценкой</summary>
-		/// <param name="st">Студент</param>
+		/// <param name="student">Студент</param>
 		/// <param name="cl">Предмет</param>
 		/// <param name="mark">Оценка</param>
 		public Plan (Student student, Class cl, Mark mark) 
@@ -33,7 +33,7 @@
 		}
 
 		/// <summary>Конструктор без оценки оценкой</summary>
-		/// <param name="st">Студент</param>
+		/// <param name="student">Студент</param>
 		/// <param name="cl">Предмет</param>
 		public Plan (Student student, Class cl) 
 		{ 
