@@ -3,7 +3,7 @@
 	/// <summary>
 	/// Учебный план для студента по предмету
 	/// </summary>
-	internal class Plan : IValidatable
+	public class Plan : IValidatable
 	{
 		/// <summary> Студент </summary>
 		public Student Student { get; set; } = new Student();
