@@ -2,12 +2,6 @@
 {
 	internal class Student : IValidatable
 	{
-		string name_ = "";
-		string surname_ = "";
-		string patronim_ = "";
-		string phone_ = "";
-		Address address_ = new();
-
 		/// <summary>
 		/// Пустой конструтор студента
 		/// </summary>
@@ -24,44 +18,44 @@
 		public Student(Address address, string phone, string name,
 			string surname, string patronim = "")
 		{
-			this.name_ = name;
-			this.surname_ = surname;
-			this.patronim_ = patronim;
-			this.phone_ = phone;
-			this.address_ = address;
+			this.Name = name;
+			this.Surname = surname;
+			this.Patronim = patronim;
+			this.Phone = phone;
+			this.Address = address;
 		}
 		
 		public bool IsValid => this.Address.IsValid && !(
 			string.IsNullOrWhiteSpace(this.Name) ||
 			string.IsNullOrWhiteSpace(this.Surname) ||
 			string.IsNullOrWhiteSpace(this.Phone) ||
-			this.patronim_ == null
+			this.Patronim == null
 		);
 
 		/// <summary>
 		/// Имя студента
 		/// </summary>
-		public string Name { get => name_; set => name_ = value; }
+		public string Name { get; set; } = "";
 
 		/// <summary>
 		/// Фамилия студента
 		/// </summary>
-		public string Surname { get => surname_; set => surname_ = value; }
+		public string Surname { get; set; } = "";
 
 		/// <summary>
 		/// Отчество студента
 		/// </summary>
-		public string Patronim { get => patronim_; set => patronim_ = value; }
+		public string Patronim { get; set; } = "";
 
 		/// <summary>
 		/// Адрес студента
 		/// </summary>
-		public Address Address { get => address_; set => address_ = value; }
+		public Address Address { get; set; } = new Address();
 
 		/// <summary>
 		/// Телефон студента
 		/// </summary>
-		public string Phone { get => phone_; set => phone_ = value; }
+		public string Phone { get; set; } = "";
 
 		public override string ToString()
 			=> $"{Surname} {Name} {Patronim} {Phone} {Address}";
