@@ -1,8 +1,9 @@
 ﻿namespace Electives
 {
 	/// <summary>Оценка</summary>
-	public class Mark
-	{
+	public class Mark (Mark.Type t = Mark.Type.None)
+	{	
+		/// <summary>Возможное значение оценки</summary>
 		public enum Type : byte
 		{
 			/// <summary>Пустая ячейка</summary>
@@ -21,7 +22,7 @@
 			Extra
 		}
 
-		public Type value { get; set; } = Type.None;
+		public Type value { get; set; } = t;
 
 		public override string ToString()
 		{
@@ -37,6 +38,5 @@
 				_ => throw new NotImplementedException()
 			};
 		}
-
 	};
 }
