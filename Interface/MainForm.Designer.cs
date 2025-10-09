@@ -25,15 +25,15 @@
 		///  Required method for Designer support - do not modify
 		///  the contents of this method with the code editor.
 		/// </summary>
-		private void InitializeComponent ()
+		private void InitializeComponent()
 		{
 			menuStrip1 = new MenuStrip();
 			FileToolStripMenuItem = new ToolStripMenuItem();
 			CloseButton = new ToolStripMenuItem();
 			StudentsToolStripMenuItem = new ToolStripMenuItem();
-			ClassesToolStripMenuItem = new ToolStripMenuItem();
 			StudentAddtoolStripMenuItem = new ToolStripMenuItem();
 			StudentEditToolStripMenuItem = new ToolStripMenuItem();
+			ClassesToolStripMenuItem = new ToolStripMenuItem();
 			ClassAddStripMenuItem = new ToolStripMenuItem();
 			ClassEditStripMenuItem = new ToolStripMenuItem();
 			menuStrip1.SuspendLayout();
@@ -69,6 +69,20 @@
 			StudentsToolStripMenuItem.Size = new Size(71, 20);
 			StudentsToolStripMenuItem.Text = "&Студенты";
 			// 
+			// StudentAddtoolStripMenuItem
+			// 
+			StudentAddtoolStripMenuItem.Name = "StudentAddtoolStripMenuItem";
+			StudentAddtoolStripMenuItem.Size = new Size(180, 22);
+			StudentAddtoolStripMenuItem.Text = "&Добавить";
+			StudentAddtoolStripMenuItem.Click += StudentAddtoolStripMenuItem_Click;
+			// 
+			// StudentEditToolStripMenuItem
+			// 
+			StudentEditToolStripMenuItem.Name = "StudentEditToolStripMenuItem";
+			StudentEditToolStripMenuItem.Size = new Size(180, 22);
+			StudentEditToolStripMenuItem.Text = "&Редактировать";
+			StudentEditToolStripMenuItem.Click += StudentEditToolStripMenuItem_Click;
+			// 
 			// ClassesToolStripMenuItem
 			// 
 			ClassesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { ClassAddStripMenuItem, ClassEditStripMenuItem });
@@ -76,28 +90,16 @@
 			ClassesToolStripMenuItem.Size = new Size(63, 20);
 			ClassesToolStripMenuItem.Text = "&Занятия";
 			// 
-			// StudentAddtoolStripMenuItem
-			// 
-			StudentAddtoolStripMenuItem.Name = "StudentAddtoolStripMenuItem";
-			StudentAddtoolStripMenuItem.Size = new Size(180, 22);
-			StudentAddtoolStripMenuItem.Text = "&Добавить";
-			// 
-			// StudentEditToolStripMenuItem
-			// 
-			StudentEditToolStripMenuItem.Name = "StudentEditToolStripMenuItem";
-			StudentEditToolStripMenuItem.Size = new Size(180, 22);
-			StudentEditToolStripMenuItem.Text = "&Редактировать";
-			// 
 			// ClassAddStripMenuItem
 			// 
 			ClassAddStripMenuItem.Name = "ClassAddStripMenuItem";
-			ClassAddStripMenuItem.Size = new Size(180, 22);
+			ClassAddStripMenuItem.Size = new Size(154, 22);
 			ClassAddStripMenuItem.Text = "&Добавить";
 			// 
 			// ClassEditStripMenuItem
 			// 
 			ClassEditStripMenuItem.Name = "ClassEditStripMenuItem";
-			ClassEditStripMenuItem.Size = new Size(180, 22);
+			ClassEditStripMenuItem.Size = new Size(154, 22);
 			ClassEditStripMenuItem.Text = "&Редактировать";
 			// 
 			// MainForm
