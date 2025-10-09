@@ -1,6 +1,6 @@
 ﻿namespace Electives
 {
-	internal class Student : IValidatable
+	public class Student : IValidatable
 	{
 		/// <summary>
 		/// Пустой конструтор студента
