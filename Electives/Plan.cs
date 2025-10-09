@@ -3,7 +3,7 @@
 	/// <summary>
 	/// Учебный план для студента по предмету
 	/// </summary>
-	internal class Plan
+	internal class Plan : IValidatable
 	{
 		/// <summary> Студент </summary>
 		public Student Student { get; set; } = new Student();
@@ -41,5 +41,7 @@
 			this.Class = cl; 
 			this.Mark = new Mark(); 
 		}
+
+		public bool IsValid => Student.IsValid && Class.IsValid;
 	}
 }
