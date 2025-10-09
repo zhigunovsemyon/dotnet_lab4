@@ -36,22 +36,22 @@
 		/// <summary>
 		/// Название предмета
 		/// </summary>
-		string name { get => name_; set => name_ = value; }
+		public string name { get => name_; set => name_ = value; }
 
 		/// <summary>
 		/// Количество лекций
 		/// </summary>
-		int lections { get => lections_; set => lections_ = value; }
+		public int lections { get => lections_; set => lections_ = value; }
 
 		/// <summary>
 		/// Количество практик
 		/// </summary>
-		int practices { get => practices_; set => practices_ = value; }
+		public int practices { get => practices_; set => practices_ = value; }
 
 		/// <summary>
 		/// Количество лабораторных работ
 		/// </summary>
-		int lab_works { get => lab_works_; set => lab_works_ = value; }
+		public int lab_works { get => lab_works_; set => lab_works_ = value; }
 
 		public override string ToString()
 		{
