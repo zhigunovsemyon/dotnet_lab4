@@ -2,12 +2,6 @@
 {
 	internal class Address : IValidatable
 	{
-		string region_ = "";
-		string city_ = "";
-		string street_ = "";
-		string house_ = "";
-		string building_ = "";
-
 		/// <summary>
 		/// Адрес 
 		/// </summary>
@@ -16,55 +10,35 @@
 		/// <param name="street">Улица</param>
 		/// <param name="house">Дом</param>
 		/// <param name="building">Номер строения</param>
-		public Address(string region, string city, string street,
+		public Address (string region, string city, string street,
 			string house, string building = "")
 		{
-			this.region_ = region;
-			this.city_ = city;
-			this.street_ = street;
-			this.house_ = house;
-			this.building_ = building;
+			this.region = region;
+			this.city = city;
+			this.street = street;
+			this.house = house;
+			this.building = building;
 		}
 
 		/// <summary>
 		/// Конструктор пустого адреса
 		/// </summary>
-		public Address() { }
+		public Address () { }
 
-		public string region
-		{
-			get => region_;
-			set => region_ = value;
-		}
+		public string region { get; set; } = "";
 
-		public string city
-		{
-			get => city_;
-			set => city_ = value;
-		}
+		public string city { get; set; } = "";
 
-		public string street
-		{
-			get => street_;
-			set => street_ = value;
-		}
+		public string street { get; set; } = "";
 
-		public string house
-		{
-			get => house_;
-			set => house_ = value;
-		}
+		public string house { get; set; } = "";
 
-		public string building
-		{
-			get => building_;
-			set => building_ = value;
-		}
+		public string building { get; set; } = "";
 
-		public bool IsValid => !(string.IsNullOrWhiteSpace(region_) || 
-			string.IsNullOrWhiteSpace(city_) ||
-			string.IsNullOrWhiteSpace(street_) ||
-			string.IsNullOrWhiteSpace(house_) ||
-			(building == null));		
+		public bool IsValid => !(string.IsNullOrWhiteSpace(region) ||
+			string.IsNullOrWhiteSpace(city) ||
+			string.IsNullOrWhiteSpace(street) ||
+			string.IsNullOrWhiteSpace(house) ||
+			(building == null));
 	}
 }
