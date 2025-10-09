@@ -1,6 +1,6 @@
 ﻿namespace Electives
 {
-	internal class Class : IValidatable
+	public class Class : IValidatable
 	{
 		/// <summary>
 		/// Конструктор пустого предмета
