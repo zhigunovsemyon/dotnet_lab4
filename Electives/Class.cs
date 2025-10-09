@@ -2,15 +2,10 @@
 {
 	internal class Class : IValidatable
 	{
-		string name_ = "";
-		int lections_ = 0;
-		int practices_ = 0;
-		int lab_works_ = 0;
-
 		/// <summary>
 		/// Конструктор пустого предмета
 		/// </summary>
-		public Class() { }
+		public Class () { }
 
 		/// <summary>
 		/// Конструктор предмета
@@ -19,12 +14,12 @@
 		/// <param name="lections">Объём лекционных занятий</param>
 		/// <param name="practices">Объём практик</param>
 		/// <param name="lab_works">Объём лабораторных работ</param>
-		public Class(string name, int lections, int practices, int lab_works)
+		public Class (string name, int lections, int practices, int lab_works)
 		{
-			this.name_ = name;
-			this.lections_ = lections;
-			this.practices_ = practices;
-			this.lab_works_ = lab_works;
+			this.name = name;
+			this.lections = lections;
+			this.practices = practices;
+			this.lab_works = lab_works;
 		}
 
 		/// <summary>
@@ -36,24 +31,24 @@
 		/// <summary>
 		/// Название предмета
 		/// </summary>
-		public string name { get => name_; set => name_ = value; }
+		public string name { get; set; } = "";
 
 		/// <summary>
 		/// Количество лекций
 		/// </summary>
-		public int lections { get => lections_; set => lections_ = value; }
+		public int lections { get; set; } = 0;
 
 		/// <summary>
 		/// Количество практик
 		/// </summary>
-		public int practices { get => practices_; set => practices_ = value; }
+		public int practices { get; set; } = 0;
 
 		/// <summary>
 		/// Количество лабораторных работ
 		/// </summary>
-		public int lab_works { get => lab_works_; set => lab_works_ = value; }
+		public int lab_works { get; set; } = 0;
 
-		public override string ToString()
+		public override string ToString ()
 		{
 			return $"{name}: лекций:{lections}, " +
 				$"практик {practices}, " +
