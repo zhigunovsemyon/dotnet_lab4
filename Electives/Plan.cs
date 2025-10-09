@@ -23,22 +23,22 @@
 
 		/// <summary>Конструктор с уже заданной оценкой</summary>
 		/// <param name="student">Студент</param>
-		/// <param name="cl">Предмет</param>
+		/// <param name="class">Предмет</param>
 		/// <param name="mark">Оценка</param>
-		public Plan (Student student, Class cl, Mark mark) 
+		public Plan (Student student, Class @class, Mark mark) 
 		{ 
 			this.Student = student; 
-			this.Class = cl; 
+			this.Class = @class; 
 			this.Mark = mark; 
 		}
 
 		/// <summary>Конструктор без оценки оценкой</summary>
 		/// <param name="student">Студент</param>
-		/// <param name="cl">Предмет</param>
-		public Plan (Student student, Class cl) 
+		/// <param name="class">Предмет</param>
+		public Plan (Student student, Class @class) 
 		{ 
 			this.Student = student; 
-			this.Class = cl; 
+			this.Class = @class; 
 			this.Mark = new Mark(); 
 		}
 
