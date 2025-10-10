@@ -61,6 +61,20 @@
 			get_from_boxes();
 			Close();
 		}
+
+		private void trim_all_textbox(object sender, EventArgs e)
+		{
+			this.SurnameBox.Text = this.SurnameBox.Text.Trim();
+			this.NameBox.Text = this.NameBox.Text.Trim();
+			this.PatronimBox.Text = this.PatronimBox.Text.Trim();
+			this.PhoneBox.Text = this.PhoneBox.Text.Trim();
+
+			this.RegionBox.Text = this.RegionBox.Text.Trim();
+			this.CityBox.Text = this.CityBox.Text.Trim();
+			this.StreetBox.Text = this.StreetBox.Text.Trim();
+			this.HouseBox.Text = this.HouseBox.Text.Trim();
+			this.BuildingBox.Text = this.BuildingBox.Text.Trim();
+		}
 	}
 
 }

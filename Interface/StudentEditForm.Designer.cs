@@ -57,6 +57,7 @@
 			SurnameBox.Name = "SurnameBox";
 			SurnameBox.Size = new Size(129, 23);
 			SurnameBox.TabIndex = 0;
+			SurnameBox.LostFocus += trim_all_textbox;
 			// 
 			// NameBox
 			// 
@@ -64,6 +65,7 @@
 			NameBox.Name = "NameBox";
 			NameBox.Size = new Size(129, 23);
 			NameBox.TabIndex = 1;
+			NameBox.LostFocus += trim_all_textbox;
 			// 
 			// PatronimBox
 			// 
@@ -71,6 +73,7 @@
 			PatronimBox.Name = "PatronimBox";
 			PatronimBox.Size = new Size(129, 23);
 			PatronimBox.TabIndex = 2;
+			PatronimBox.LostFocus += trim_all_textbox;
 			// 
 			// PhoneBox
 			// 
@@ -78,6 +81,7 @@
 			PhoneBox.Name = "PhoneBox";
 			PhoneBox.Size = new Size(129, 23);
 			PhoneBox.TabIndex = 3;
+			PhoneBox.LostFocus += trim_all_textbox;
 			// 
 			// label1
 			// 
@@ -170,6 +174,7 @@
 			BuildingBox.Name = "BuildingBox";
 			BuildingBox.Size = new Size(180, 23);
 			BuildingBox.TabIndex = 20;
+			BuildingBox.LostFocus += trim_all_textbox;
 			// 
 			// label8
 			// 
@@ -186,6 +191,7 @@
 			HouseBox.Name = "HouseBox";
 			HouseBox.Size = new Size(180, 23);
 			HouseBox.TabIndex = 18;
+			HouseBox.LostFocus += trim_all_textbox;
 			// 
 			// label7
 			// 
@@ -202,6 +208,7 @@
 			StreetBox.Name = "StreetBox";
 			StreetBox.Size = new Size(180, 23);
 			StreetBox.TabIndex = 16;
+			StreetBox.LostFocus += trim_all_textbox;
 			// 
 			// label6
 			// 
@@ -218,6 +225,7 @@
 			CityBox.Name = "CityBox";
 			CityBox.Size = new Size(180, 23);
 			CityBox.TabIndex = 14;
+			CityBox.LostFocus += trim_all_textbox;
 			// 
 			// label4
 			// 
@@ -234,6 +242,7 @@
 			RegionBox.Name = "RegionBox";
 			RegionBox.Size = new Size(180, 23);
 			RegionBox.TabIndex = 0;
+			RegionBox.LostFocus += trim_all_textbox;
 			// 
 			// StudentEditForm
 			// 
