@@ -59,5 +59,19 @@
 
 		public override string ToString()
 			=> $"{Surname} {Name} {Patronim} {Phone} {Address}";
+
+		/// <summary> Создание копии данного студента </summary>
+		/// <returns>Копия студента</returns>
+		public Student clone()
+		{
+			return new Student
+			{
+				Address = this.Address.clone(),
+				Name = this.Name,
+				Surname = this.Surname,
+				Patronim = this.Patronim,
+				Phone = this.Phone
+			};
+		}
 	}
 }

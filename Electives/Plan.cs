@@ -25,23 +25,30 @@
 		/// <param name="student">Студент</param>
 		/// <param name="class">Предмет</param>
 		/// <param name="mark">Оценка</param>
-		public Plan (Student student, Class @class, Mark mark) 
-		{ 
-			this.Student = student; 
-			this.Class = @class; 
-			this.Mark = mark; 
+		public Plan (Student student, Class @class, Mark mark)
+		{
+			this.Student = student;
+			this.Class = @class;
+			this.Mark = mark;
 		}
 
 		/// <summary>Конструктор без оценки оценкой</summary>
 		/// <param name="student">Студент</param>
 		/// <param name="class">Предмет</param>
-		public Plan (Student student, Class @class) 
-		{ 
-			this.Student = student; 
-			this.Class = @class; 
-			this.Mark = new Mark(); 
+		public Plan (Student student, Class @class)
+		{
+			this.Student = student;
+			this.Class = @class;
+			this.Mark = new Mark();
 		}
 
 		public bool IsValid => Student.IsValid && Class.IsValid;
+
+		/// <summary> Создание копии текущего плана </summary>
+		/// <returns>Копия плана</returns>
+		public Plan clone ()
+		{
+			return new Plan(Student.clone(), Class.clone(), new Mark(this.Mark.value));
+		}
 	}
 }

@@ -40,5 +40,19 @@
 			string.IsNullOrWhiteSpace(street) ||
 			string.IsNullOrWhiteSpace(house) ||
 			(building == null));
+
+		/// <summary>Создание копии данного адреса</summary>
+		/// <returns>Копия исходного адреса</returns>
+		public Address clone ()
+		{
+			return new Address
+			{
+				region = this.region,
+				city = this.city,
+				street = this.street,
+				house = this.house,
+				building = this.building
+			};
+		}
 	}
 }

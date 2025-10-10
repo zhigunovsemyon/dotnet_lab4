@@ -54,5 +54,16 @@
 				$"практик {practices}, " +
 				$"лабораторных работ {lab_works}";
 		}
+
+		public Class clone ()
+		{
+			return new Class
+			{
+				name = this.name,
+				lab_works = this.lab_works,
+				lections = this.lections,
+				practices = this.practices
+			};
+		}
 	}
 }
