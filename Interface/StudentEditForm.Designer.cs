@@ -77,7 +77,7 @@
 			PhoneBox.Location = new Point(12, 189);
 			PhoneBox.Name = "PhoneBox";
 			PhoneBox.Size = new Size(129, 23);
-			PhoneBox.TabIndex = 4;
+			PhoneBox.TabIndex = 3;
 			// 
 			// label1
 			// 
@@ -121,7 +121,7 @@
 			ok_button.Location = new Point(12, 240);
 			ok_button.Name = "ok_button";
 			ok_button.Size = new Size(75, 23);
-			ok_button.TabIndex = 10;
+			ok_button.TabIndex = 11;
 			ok_button.Text = "OK";
 			ok_button.UseVisualStyleBackColor = true;
 			ok_button.Click += ok_button_Click;
@@ -132,7 +132,7 @@
 			close_button.Location = new Point(88, 240);
 			close_button.Name = "close_button";
 			close_button.Size = new Size(75, 23);
-			close_button.TabIndex = 11;
+			close_button.TabIndex = 12;
 			close_button.Text = "Закрыть";
 			close_button.UseVisualStyleBackColor = true;
 			// 
@@ -151,7 +151,7 @@
 			AddressBox.Location = new Point(169, 3);
 			AddressBox.Name = "AddressBox";
 			AddressBox.Size = new Size(192, 267);
-			AddressBox.TabIndex = 12;
+			AddressBox.TabIndex = 10;
 			AddressBox.TabStop = false;
 			AddressBox.Text = "Адрес студента";
 			// 
