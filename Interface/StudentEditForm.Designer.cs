@@ -25,7 +25,7 @@
 		/// Required method for Designer support - do not modify
 		/// the contents of this method with the code editor.
 		/// </summary>
-		private void InitializeComponent()
+		private void InitializeComponent ()
 		{
 			SurnameBox = new TextBox();
 			NameBox = new TextBox();
@@ -38,16 +38,16 @@
 			ok_button = new Button();
 			close_button = new Button();
 			AddressBox = new GroupBox();
-			RegionBox = new TextBox();
-			label4 = new Label();
-			CityBox = new TextBox();
-			label6 = new Label();
-			label7 = new Label();
-			StreetBox = new TextBox();
-			label8 = new Label();
-			HouseBox = new TextBox();
 			label9 = new Label();
 			BuildingBox = new TextBox();
+			label8 = new Label();
+			HouseBox = new TextBox();
+			label7 = new Label();
+			StreetBox = new TextBox();
+			label6 = new Label();
+			CityBox = new TextBox();
+			label4 = new Label();
+			RegionBox = new TextBox();
 			AddressBox.SuspendLayout();
 			SuspendLayout();
 			// 
@@ -155,53 +155,21 @@
 			AddressBox.TabStop = false;
 			AddressBox.Text = "Адрес студента";
 			// 
-			// RegionBox
+			// label9
 			// 
-			RegionBox.Location = new Point(6, 36);
-			RegionBox.Name = "RegionBox";
-			RegionBox.Size = new Size(180, 23);
-			RegionBox.TabIndex = 0;
+			label9.AutoSize = true;
+			label9.Location = new Point(6, 220);
+			label9.Name = "label9";
+			label9.Size = new Size(60, 15);
+			label9.TabIndex = 21;
+			label9.Text = "&Строение";
 			// 
-			// label4
+			// BuildingBox
 			// 
-			label4.AutoSize = true;
-			label4.Location = new Point(6, 18);
-			label4.Name = "label4";
-			label4.Size = new Size(46, 15);
-			label4.TabIndex = 13;
-			label4.Text = "&Регион";
-			// 
-			// CityBox
-			// 
-			CityBox.Location = new Point(6, 83);
-			CityBox.Name = "CityBox";
-			CityBox.Size = new Size(180, 23);
-			CityBox.TabIndex = 14;
-			// 
-			// label6
-			// 
-			label6.AutoSize = true;
-			label6.Location = new Point(6, 65);
-			label6.Name = "label6";
-			label6.Size = new Size(40, 15);
-			label6.TabIndex = 15;
-			label6.Text = "&Город";
-			// 
-			// label7
-			// 
-			label7.AutoSize = true;
-			label7.Location = new Point(6, 115);
-			label7.Name = "label7";
-			label7.Size = new Size(41, 15);
-			label7.TabIndex = 17;
-			label7.Text = "&Улица";
-			// 
-			// StreetBox
-			// 
-			StreetBox.Location = new Point(6, 133);
-			StreetBox.Name = "StreetBox";
-			StreetBox.Size = new Size(180, 23);
-			StreetBox.TabIndex = 16;
+			BuildingBox.Location = new Point(6, 238);
+			BuildingBox.Name = "BuildingBox";
+			BuildingBox.Size = new Size(180, 23);
+			BuildingBox.TabIndex = 20;
 			// 
 			// label8
 			// 
@@ -219,21 +187,53 @@
 			HouseBox.Size = new Size(180, 23);
 			HouseBox.TabIndex = 18;
 			// 
-			// label9
+			// label7
 			// 
-			label9.AutoSize = true;
-			label9.Location = new Point(6, 220);
-			label9.Name = "label9";
-			label9.Size = new Size(60, 15);
-			label9.TabIndex = 21;
-			label9.Text = "&Строение";
+			label7.AutoSize = true;
+			label7.Location = new Point(6, 115);
+			label7.Name = "label7";
+			label7.Size = new Size(41, 15);
+			label7.TabIndex = 17;
+			label7.Text = "&Улица";
 			// 
-			// BuildingBox
+			// StreetBox
 			// 
-			BuildingBox.Location = new Point(6, 238);
-			BuildingBox.Name = "BuildingBox";
-			BuildingBox.Size = new Size(180, 23);
-			BuildingBox.TabIndex = 20;
+			StreetBox.Location = new Point(6, 133);
+			StreetBox.Name = "StreetBox";
+			StreetBox.Size = new Size(180, 23);
+			StreetBox.TabIndex = 16;
+			// 
+			// label6
+			// 
+			label6.AutoSize = true;
+			label6.Location = new Point(6, 65);
+			label6.Name = "label6";
+			label6.Size = new Size(40, 15);
+			label6.TabIndex = 15;
+			label6.Text = "&Город";
+			// 
+			// CityBox
+			// 
+			CityBox.Location = new Point(6, 83);
+			CityBox.Name = "CityBox";
+			CityBox.Size = new Size(180, 23);
+			CityBox.TabIndex = 14;
+			// 
+			// label4
+			// 
+			label4.AutoSize = true;
+			label4.Location = new Point(6, 18);
+			label4.Name = "label4";
+			label4.Size = new Size(46, 15);
+			label4.TabIndex = 13;
+			label4.Text = "&Регион";
+			// 
+			// RegionBox
+			// 
+			RegionBox.Location = new Point(6, 36);
+			RegionBox.Name = "RegionBox";
+			RegionBox.Size = new Size(180, 23);
+			RegionBox.TabIndex = 0;
 			// 
 			// StudentEditForm
 			// 
@@ -257,7 +257,7 @@
 			MaximizeBox = false;
 			Name = "StudentEditForm";
 			ShowIcon = false;
-			Text = "StudentEditForm";
+			Text = "Информация о студенте";
 			Load += StudentEditForm_Load;
 			AddressBox.ResumeLayout(false);
 			AddressBox.PerformLayout();
