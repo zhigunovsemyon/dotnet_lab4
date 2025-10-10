@@ -267,7 +267,7 @@
 			Name = "StudentEditForm";
 			ShowIcon = false;
 			Text = "Информация о студенте";
-			Load += StudentEditForm_Load;
+			Load += set_boxes;
 			AddressBox.ResumeLayout(false);
 			AddressBox.PerformLayout();
 			ResumeLayout(false);

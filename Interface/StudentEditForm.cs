@@ -1,15 +1,21 @@
 ﻿namespace Interface
 {
+	/// <summary> Форма изменения данных о студенте </summary>
 	public partial class StudentEditForm : Form
 	{
+		/// <summary> Конструктор формы </summary>
+		/// <param name="student">Обрабатываемый студент</param>
 		public StudentEditForm(Electives.Student student)
 		{
 			InitializeComponent();
 			this.student = student;		
-			set_boxes();			
 		}
 
-		private void set_boxes()
+		/// <summary>
+		/// Метод, наполняющий все поля формы данными из переданного студента.
+		/// Вызывается автоматически при запуске формы
+		/// </summary>
+		private void set_boxes(object sender, EventArgs e)
 		{
 			this.SurnameBox.Text = this.student.Surname;
 			this.NameBox.Text = this.student.Name;
@@ -22,6 +28,11 @@
 			this.HouseBox.Text = this.student.Address.house;
 			this.BuildingBox.Text = this.student.Address.building;
 		}
+
+		/// <summary>
+		/// Метод, заполняющий свойства студента данными из полей формы.
+		/// Вызывается при нажатии пользователем кнопки "ОК"
+		/// </summary>
 		private void get_from_boxes()
 		{
 			this.student.Surname = this.SurnameBox.Text;
@@ -36,19 +47,20 @@
 			this.student.Address.building = this.BuildingBox.Text;
 		}
 
+		/// <summary> Обрабатываемый формой студент </summary>
 		public Electives.Student student { get; private set; }
 
-		private void StudentEditForm_Load(object sender, EventArgs e)
-		{
-
-		}
-
+		/// <summary> Обработчик нажатия на кнопку "ОК" </summary>
 		private void ok_button_Click(object sender, EventArgs e)
 		{
 			get_from_boxes();
 			Close();
 		}
 
+		/// <summary>
+		/// Обработчик по завершению изменения поля формы.
+		/// Убирает в каждом текстовом поле пробелы перед и после содержимым.
+		/// </summary>
 		private void trim_all_textbox(object sender, EventArgs e)
 		{
 			this.SurnameBox.Text = this.SurnameBox.Text.Trim();
