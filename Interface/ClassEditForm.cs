@@ -7,17 +7,9 @@
 			InitializeComponent();
 			this.@class = @class;
 
-			this.reset_boxes();
 			this.set_boxes();
 		}
 
-		private void reset_boxes()
-		{
-			this.ClassNameBox.Text = string.Empty;
-			this.LectionsInput.Value = 0;
-			this.PracticeInput.Value = 0;
-			this.LabsInput.Value = 0;
-		}
 		private void set_boxes()
 		{
 			this.ClassNameBox.Text = this.@class.name;
