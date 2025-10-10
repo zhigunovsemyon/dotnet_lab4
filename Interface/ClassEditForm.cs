@@ -6,11 +6,9 @@
 		{
 			InitializeComponent();
 			this.@class = @class;
-
-			this.set_boxes();
 		}
 
-		private void set_boxes()
+		private void set_boxes(object sender, EventArgs e)
 		{
 			this.ClassNameBox.Text = this.@class.name;
 			this.LectionsInput.Value = this.@class.lections;

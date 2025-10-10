@@ -148,6 +148,7 @@
 			Name = "ClassEditForm";
 			ShowIcon = false;
 			Text = "Информация о предмете";
+			Load += set_boxes;
 			((System.ComponentModel.ISupportInitialize)LectionsInput).EndInit();
 			((System.ComponentModel.ISupportInitialize)PracticeInput).EndInit();
 			((System.ComponentModel.ISupportInitialize)LabsInput).EndInit();
