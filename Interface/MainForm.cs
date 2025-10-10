@@ -5,7 +5,7 @@ namespace Interface
 	public partial class MainForm : Form
 	{
 		private Electives.Student student_ = new();
-		//private Electives.Class class_;
+		private Electives.Class class_ = new();
 
 		public MainForm ()
 		{
@@ -17,7 +17,7 @@ namespace Interface
 			Close();
 		}
 
-		private void AddOrEditStudent(Electives.Student student)
+		private void AddOrEditStudent (Electives.Student student)
 		{
 			var form = new StudentEditForm(student);
 			if (DialogResult.OK != form.ShowDialog()) {
@@ -40,7 +40,7 @@ namespace Interface
 		}
 
 		private void StudentAddtoolStripMenuItem_Click (object sender, EventArgs e)
-		{	
+		{
 			//Вызов формы на чистом студенте
 			AddOrEditStudent(new Student());
 		}
@@ -49,6 +49,38 @@ namespace Interface
 		{
 			//Вызов формы на копии исходного студента
 			AddOrEditStudent(student_.clone());
+		}
+
+		private void AddOrEditClass(Electives.Class @class)
+		{			
+			var form = new ClassEditForm(@class);
+			if (DialogResult.OK != form.ShowDialog()) {
+				return;
+			}
+
+			if (form.@class == null) {
+				MessageBox.Show(
+					"ClassEditForm вернула null",
+					"Внутренняя ошибка"
+				);
+				return;
+			}
+			if (!form.@class.IsValid) {
+				MessageBox.Show("Неправильно указаны данные!");
+				return;
+			}
+
+			this.@class_ = form.@class;
+		}
+
+		private void ClassAddStripMenuItem_Click (object sender, EventArgs e)
+		{
+			AddOrEditClass(new Class());
+		}
+
+		private void ClassEditStripMenuItem_Click (object sender, EventArgs e)
+		{
+			AddOrEditClass(class_.clone());
 		}
 	}
 }
