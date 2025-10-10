@@ -5,23 +5,10 @@
 		public StudentEditForm(Electives.Student student)
 		{
 			InitializeComponent();
-			this.student = student;
-			reset_boxes();			
+			this.student = student;		
 			set_boxes();			
 		}
-		private void reset_boxes()
-		{
-			this.SurnameBox.Clear();
-			this.NameBox.Clear();
-			this.PatronimBox.Clear();
-			this.PhoneBox.Clear();
 
-			this.RegionBox.Clear();
-			this.CityBox.Clear();
-			this.StreetBox.Clear();
-			this.HouseBox.Clear();
-			this.BuildingBox.Clear();
-		}
 		private void set_boxes()
 		{
 			this.SurnameBox.Text = this.student.Surname;
