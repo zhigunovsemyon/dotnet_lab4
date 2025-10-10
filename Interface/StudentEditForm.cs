@@ -59,9 +59,6 @@
 		private void ok_button_Click(object sender, EventArgs e)
 		{
 			get_from_boxes();
-			if (!this.student.IsValid) {
-				this.DialogResult = DialogResult.Abort;
-			}
 			Close();
 		}
 	}

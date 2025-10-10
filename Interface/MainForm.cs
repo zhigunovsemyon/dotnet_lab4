@@ -21,7 +21,11 @@ namespace Interface
 		{
 			var form = new StudentEditForm(new Student());
 			if (DialogResult.OK == form.ShowDialog()) {
-				student_ = form.student;
+				if (form.student != null) {
+					if (form.student.IsValid) {
+						student_ = form.student;
+					}
+				}
 			}
 		}
 
@@ -29,7 +33,11 @@ namespace Interface
 		{
 			var form = new StudentEditForm(student_.clone());
 			if (DialogResult.OK == form.ShowDialog()) {
-				student_ = form.student;
+				if (form.student != null) {
+					if (form.student.IsValid) {
+						student_ = form.student;
+					}
+				}
 			}
 		}
 	}
