@@ -7,7 +7,6 @@
 			InitializeComponent();
 			this.@class = @class;
 		}
+		public Electives.Class @class { get; set; }
 	}
-
-	public Electives.Class @class { get; set; }
 }
