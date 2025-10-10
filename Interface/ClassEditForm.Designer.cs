@@ -84,6 +84,7 @@
 			ClassNameBox.Name = "ClassNameBox";
 			ClassNameBox.Size = new Size(189, 23);
 			ClassNameBox.TabIndex = 4;
+			ClassNameBox.LostFocus += ClassNameBox_LostFocus;
 			// 
 			// LectionsInput
 			// 
@@ -127,6 +128,7 @@
 			// 
 			// ClassEditForm
 			// 
+			AcceptButton = OkButton;
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
 			CancelButton = CloseButton;

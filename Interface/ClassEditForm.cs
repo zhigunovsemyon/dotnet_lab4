@@ -43,5 +43,10 @@
 			this.DialogResult = DialogResult.OK;
 			this.Close();
 		}
+
+		private void ClassNameBox_LostFocus(object sender, EventArgs e)
+		{
+			this.ClassNameBox.Text = this.ClassNameBox.Text.Trim();
+		}
 	}
 }
