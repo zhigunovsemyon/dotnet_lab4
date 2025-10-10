@@ -1,14 +1,16 @@
 ﻿namespace Electives
 {
+	/// <summary> Предмет </summary>
 	public class Class : IValidatable
 	{
 		/// <summary>
-		/// Конструктор пустого предмета
+		/// Конструктор пустого предмета.
+		/// Все свойства занулены
 		/// </summary>
 		public Class () { }
 
 		/// <summary>
-		/// Конструктор предмета
+		/// Параметризованный конструктор предмета
 		/// </summary>
 		/// <param name="name">Название предмета</param>
 		/// <param name="lections">Объём лекционных занятий</param>
@@ -28,24 +30,16 @@
 		public bool IsValid => !(string.IsNullOrWhiteSpace(this.name) ||
 					(this.lections + this.lab_works + this.practices) == 0);
 
-		/// <summary>
-		/// Название предмета
-		/// </summary>
+		/// <summary> Название предмета </summary>
 		public string name { get; set; } = "";
 
-		/// <summary>
-		/// Количество лекций
-		/// </summary>
+		/// <summary> Количество лекций </summary>
 		public int lections { get; set; } = 0;
 
-		/// <summary>
-		/// Количество практик
-		/// </summary>
+		/// <summary> Количество практик </summary>
 		public int practices { get; set; } = 0;
 
-		/// <summary>
-		/// Количество лабораторных работ
-		/// </summary>
+		/// <summary> Количество лабораторных работ </summary>
 		public int lab_works { get; set; } = 0;
 
 		public override string ToString ()
@@ -55,6 +49,8 @@
 				$"лабораторных работ {lab_works}";
 		}
 
+		/// <summary> Создаёт копию данного занятия </summary>
+		/// <returns>Идентичное независимое занятие</returns>
 		public Class clone ()
 		{
 			return new Class

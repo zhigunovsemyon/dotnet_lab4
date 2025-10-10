@@ -19,9 +19,12 @@
 			return $"{Student}, предмет: {Class.name}, оценка {Mark}";
 		}
 
+		/// <summary>
+		/// Конструктор пустого плана. Содержит пустого студента и занятие.
+		/// </summary>
 		public Plan () { }
 
-		/// <summary>Конструктор с уже заданной оценкой</summary>
+		/// <summary>Конструктор плана с уже заданной оценкой</summary>
 		/// <param name="student">Студент</param>
 		/// <param name="class">Предмет</param>
 		/// <param name="mark">Оценка</param>
@@ -32,7 +35,7 @@
 			this.Mark = mark;
 		}
 
-		/// <summary>Конструктор без оценки оценкой</summary>
+		/// <summary>Конструктор плана без оценки</summary>
 		/// <param name="student">Студент</param>
 		/// <param name="class">Предмет</param>
 		public Plan (Student student, Class @class)

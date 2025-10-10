@@ -1,6 +1,7 @@
 ﻿namespace Electives
 {
 	/// <summary>Оценка</summary>
+	/// <param name="t">Значение</param>
 	public class Mark (Mark.Type t = Mark.Type.None)
 	{	
 		/// <summary>Возможное значение оценки</summary>
@@ -22,6 +23,7 @@
 			Extra
 		}
 
+		/// <summary> Свойство со значением оценки </summary>
 		public Type value { get; set; } = t;
 
 		public override string ToString()

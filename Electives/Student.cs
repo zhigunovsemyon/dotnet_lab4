@@ -1,9 +1,10 @@
 ﻿namespace Electives
 {
+	/// <summary> Класс, содержащий информацию о студенте </summary>
 	public class Student : IValidatable
 	{
 		/// <summary>
-		/// Пустой конструтор студента
+		/// Пустой конструтор студента с занулёнными полями
 		/// </summary>
 		public Student() { }
 
@@ -32,29 +33,19 @@
 			this.Patronim == null
 		);
 
-		/// <summary>
-		/// Имя студента
-		/// </summary>
+		/// <summary> Имя студента </summary>
 		public string Name { get; set; } = "";
 
-		/// <summary>
-		/// Фамилия студента
-		/// </summary>
+		/// <summary>/ Фамилия студента </summary>
 		public string Surname { get; set; } = "";
 
-		/// <summary>
-		/// Отчество студента
-		/// </summary>
+		/// <summary>/ Отчество студента </summary>
 		public string Patronim { get; set; } = "";
 
-		/// <summary>
-		/// Адрес студента
-		/// </summary>
+		/// <summary> Адрес студента </summary>
 		public Address Address { get; set; } = new Address();
 
-		/// <summary>
-		/// Телефон студента
-		/// </summary>
+		/// <summary>/ Телефон студента </summary>
 		public string Phone { get; set; } = "";
 
 		public override string ToString()

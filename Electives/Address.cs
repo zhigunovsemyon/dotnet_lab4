@@ -1,15 +1,14 @@
 ﻿namespace Electives
 {
+	/// <summary> Адрес </summary>
 	public class Address : IValidatable
 	{
-		/// <summary>
-		/// Адрес 
-		/// </summary>
+		/// <summary>Параметризованный конструктор</summary>
 		/// <param name="region">Административный субъект</param>
 		/// <param name="city">Город</param>
 		/// <param name="street">Улица</param>
 		/// <param name="house">Дом</param>
-		/// <param name="building">Номер строения</param>
+		/// <param name="building">Строение (опционально)</param>
 		public Address (string region, string city, string street,
 			string house, string building = "")
 		{
@@ -21,18 +20,24 @@
 		}
 
 		/// <summary>
-		/// Конструктор пустого адреса
+		/// Конструктор пустого адреса.
+		/// Заполняет всё пустыми строками
 		/// </summary>
 		public Address () { }
 
+		/// <summary>Административный субъект</summary>
 		public string region { get; set; } = "";
 
+		/// <summary>Город</summary>
 		public string city { get; set; } = "";
 
+		/// <summary>Улица</summary>
 		public string street { get; set; } = "";
 
+		/// <summary>Дом</summary>
 		public string house { get; set; } = "";
 
+		/// <summary>Строение (пустое всё ещё корректно)</summary>
 		public string building { get; set; } = "";
 
 		public bool IsValid => !(string.IsNullOrWhiteSpace(region) ||
