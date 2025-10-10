@@ -6,11 +6,40 @@
 		{
 			InitializeComponent();
 			this.@class = @class;
+
+			this.reset_boxes();
+			this.set_boxes();
 		}
+
+		private void reset_boxes()
+		{
+			this.ClassNameBox.Text = string.Empty;
+			this.LectionsInput.Value = 0;
+			this.PracticeInput.Value = 0;
+			this.LabsInput.Value = 0;
+		}
+		private void set_boxes()
+		{
+			this.ClassNameBox.Text = this.@class.name;
+			this.LectionsInput.Value = this.@class.lections;
+			this.PracticeInput.Value = this.@class.practices;
+			this.LabsInput.Value = this.@class.lab_works;
+		}
+
+		private void get_from_boxes()
+		{
+			this.@class.name = this.ClassNameBox.Text;
+			this.@class.lections = ((int)this.LectionsInput.Value);
+			this.@class.practices = ((int)this.PracticeInput.Value);
+			this.@class.lab_works = ((int)this.LabsInput.Value);
+		}
+
 		public Electives.Class @class { get; set; }
 
 		private void OkButton_Click(object sender, EventArgs e)
 		{
+			get_from_boxes();
+
 			this.DialogResult = DialogResult.OK;
 			this.Close();
 		}
