@@ -1,3 +1,5 @@
+using Electives;
+
 namespace Interface
 {
 	public partial class MainForm : Form
@@ -17,8 +19,7 @@ namespace Interface
 
 		private void StudentAddtoolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			student_ = new();
-			var form = new StudentEditForm(student_);
+			var form = new StudentEditForm(new Student());
 			if (DialogResult.OK == form.ShowDialog()) {
 				student_ = form.student;
 			}
@@ -26,7 +27,7 @@ namespace Interface
 
 		private void StudentEditToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			var form = new StudentEditForm(student_);
+			var form = new StudentEditForm(student_.clone());
 			if (DialogResult.OK == form.ShowDialog()) {
 				student_ = form.student;
 			}
