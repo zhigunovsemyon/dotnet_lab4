@@ -25,7 +25,7 @@
 		/// Required method for Designer support - do not modify
 		/// the contents of this method with the code editor.
 		/// </summary>
-		private void InitializeComponent ()
+		private void InitializeComponent()
 		{
 			SurnameBox = new TextBox();
 			NameBox = new TextBox();
@@ -53,44 +53,44 @@
 			// 
 			// SurnameBox
 			// 
-			SurnameBox.Location = new Point(12, 39);
+			SurnameBox.Location = new Point(12, 35);
 			SurnameBox.MaxLength = 40;
 			SurnameBox.Name = "SurnameBox";
-			SurnameBox.Size = new Size(129, 23);
+			SurnameBox.Size = new Size(178, 23);
 			SurnameBox.TabIndex = 0;
 			SurnameBox.LostFocus += trim_all_textbox;
 			// 
 			// NameBox
 			// 
-			NameBox.Location = new Point(12, 86);
-			NameBox.MaxLength = 40;
+			NameBox.Location = new Point(12, 82);
+			NameBox.MaxLength = 28;
 			NameBox.Name = "NameBox";
-			NameBox.Size = new Size(129, 23);
+			NameBox.Size = new Size(178, 23);
 			NameBox.TabIndex = 1;
 			NameBox.LostFocus += trim_all_textbox;
 			// 
 			// PatronimBox
 			// 
-			PatronimBox.Location = new Point(12, 136);
-			PatronimBox.MaxLength = 40;
+			PatronimBox.Location = new Point(12, 132);
+			PatronimBox.MaxLength = 28;
 			PatronimBox.Name = "PatronimBox";
-			PatronimBox.Size = new Size(129, 23);
+			PatronimBox.Size = new Size(178, 23);
 			PatronimBox.TabIndex = 2;
 			PatronimBox.LostFocus += trim_all_textbox;
 			// 
 			// PhoneBox
 			// 
-			PhoneBox.Location = new Point(12, 189);
+			PhoneBox.Location = new Point(12, 185);
 			PhoneBox.MaxLength = 20;
 			PhoneBox.Name = "PhoneBox";
-			PhoneBox.Size = new Size(129, 23);
+			PhoneBox.Size = new Size(178, 23);
 			PhoneBox.TabIndex = 3;
 			PhoneBox.LostFocus += trim_all_textbox;
 			// 
 			// label1
 			// 
 			label1.AutoSize = true;
-			label1.Location = new Point(12, 21);
+			label1.Location = new Point(12, 17);
 			label1.Name = "label1";
 			label1.Size = new Size(58, 15);
 			label1.TabIndex = 5;
@@ -99,7 +99,7 @@
 			// label2
 			// 
 			label2.AutoSize = true;
-			label2.Location = new Point(12, 68);
+			label2.Location = new Point(12, 64);
 			label2.Name = "label2";
 			label2.Size = new Size(31, 15);
 			label2.TabIndex = 6;
@@ -108,16 +108,16 @@
 			// label3
 			// 
 			label3.AutoSize = true;
-			label3.Location = new Point(12, 118);
+			label3.Location = new Point(12, 114);
 			label3.Name = "label3";
-			label3.Size = new Size(58, 15);
+			label3.Size = new Size(151, 15);
 			label3.TabIndex = 7;
-			label3.Text = "&Отчество";
+			label3.Text = "&Отчество (необязательно)";
 			// 
 			// label5
 			// 
 			label5.AutoSize = true;
-			label5.Location = new Point(12, 171);
+			label5.Location = new Point(12, 167);
 			label5.Name = "label5";
 			label5.Size = new Size(55, 15);
 			label5.TabIndex = 9;
@@ -126,7 +126,7 @@
 			// ok_button
 			// 
 			ok_button.DialogResult = DialogResult.OK;
-			ok_button.Location = new Point(12, 240);
+			ok_button.Location = new Point(280, 243);
 			ok_button.Name = "ok_button";
 			ok_button.Size = new Size(75, 23);
 			ok_button.TabIndex = 11;
@@ -137,7 +137,7 @@
 			// close_button
 			// 
 			close_button.DialogResult = DialogResult.Cancel;
-			close_button.Location = new Point(88, 240);
+			close_button.Location = new Point(361, 243);
 			close_button.Name = "close_button";
 			close_button.Size = new Size(75, 23);
 			close_button.TabIndex = 12;
@@ -156,9 +156,9 @@
 			AddressBox.Controls.Add(CityBox);
 			AddressBox.Controls.Add(label4);
 			AddressBox.Controls.Add(RegionBox);
-			AddressBox.Location = new Point(169, 3);
+			AddressBox.Location = new Point(205, 0);
 			AddressBox.Name = "AddressBox";
-			AddressBox.Size = new Size(192, 267);
+			AddressBox.Size = new Size(250, 226);
 			AddressBox.TabIndex = 10;
 			AddressBox.TabStop = false;
 			AddressBox.Text = "Адрес студента";
@@ -166,18 +166,18 @@
 			// label9
 			// 
 			label9.AutoSize = true;
-			label9.Location = new Point(6, 220);
+			label9.Location = new Point(88, 168);
 			label9.Name = "label9";
-			label9.Size = new Size(60, 15);
+			label9.Size = new Size(153, 15);
 			label9.TabIndex = 21;
-			label9.Text = "&Строение";
+			label9.Text = "&Строение (необязательно)";
 			// 
 			// BuildingBox
 			// 
-			BuildingBox.Location = new Point(6, 238);
+			BuildingBox.Location = new Point(88, 186);
 			BuildingBox.MaxLength = 5;
 			BuildingBox.Name = "BuildingBox";
-			BuildingBox.Size = new Size(180, 23);
+			BuildingBox.Size = new Size(146, 23);
 			BuildingBox.TabIndex = 20;
 			BuildingBox.LostFocus += trim_all_textbox;
 			// 
@@ -195,7 +195,7 @@
 			HouseBox.Location = new Point(6, 186);
 			HouseBox.MaxLength = 5;
 			HouseBox.Name = "HouseBox";
-			HouseBox.Size = new Size(180, 23);
+			HouseBox.Size = new Size(76, 23);
 			HouseBox.TabIndex = 18;
 			HouseBox.LostFocus += trim_all_textbox;
 			// 
@@ -213,7 +213,7 @@
 			StreetBox.Location = new Point(6, 133);
 			StreetBox.MaxLength = 40;
 			StreetBox.Name = "StreetBox";
-			StreetBox.Size = new Size(180, 23);
+			StreetBox.Size = new Size(228, 23);
 			StreetBox.TabIndex = 16;
 			StreetBox.LostFocus += trim_all_textbox;
 			// 
@@ -231,7 +231,7 @@
 			CityBox.Location = new Point(6, 83);
 			CityBox.MaxLength = 40;
 			CityBox.Name = "CityBox";
-			CityBox.Size = new Size(180, 23);
+			CityBox.Size = new Size(228, 23);
 			CityBox.TabIndex = 14;
 			CityBox.LostFocus += trim_all_textbox;
 			// 
@@ -249,7 +249,7 @@
 			RegionBox.Location = new Point(6, 36);
 			RegionBox.MaxLength = 40;
 			RegionBox.Name = "RegionBox";
-			RegionBox.Size = new Size(180, 23);
+			RegionBox.Size = new Size(228, 23);
 			RegionBox.TabIndex = 0;
 			RegionBox.LostFocus += trim_all_textbox;
 			// 
@@ -259,7 +259,7 @@
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
 			CancelButton = close_button;
-			ClientSize = new Size(373, 278);
+			ClientSize = new Size(458, 278);
 			Controls.Add(AddressBox);
 			Controls.Add(close_button);
 			Controls.Add(ok_button);
