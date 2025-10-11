@@ -54,6 +54,7 @@
 			// SurnameBox
 			// 
 			SurnameBox.Location = new Point(12, 39);
+			SurnameBox.MaxLength = 40;
 			SurnameBox.Name = "SurnameBox";
 			SurnameBox.Size = new Size(129, 23);
 			SurnameBox.TabIndex = 0;
@@ -62,6 +63,7 @@
 			// NameBox
 			// 
 			NameBox.Location = new Point(12, 86);
+			NameBox.MaxLength = 40;
 			NameBox.Name = "NameBox";
 			NameBox.Size = new Size(129, 23);
 			NameBox.TabIndex = 1;
@@ -70,6 +72,7 @@
 			// PatronimBox
 			// 
 			PatronimBox.Location = new Point(12, 136);
+			PatronimBox.MaxLength = 40;
 			PatronimBox.Name = "PatronimBox";
 			PatronimBox.Size = new Size(129, 23);
 			PatronimBox.TabIndex = 2;
@@ -78,6 +81,7 @@
 			// PhoneBox
 			// 
 			PhoneBox.Location = new Point(12, 189);
+			PhoneBox.MaxLength = 20;
 			PhoneBox.Name = "PhoneBox";
 			PhoneBox.Size = new Size(129, 23);
 			PhoneBox.TabIndex = 3;
@@ -171,6 +175,7 @@
 			// BuildingBox
 			// 
 			BuildingBox.Location = new Point(6, 238);
+			BuildingBox.MaxLength = 5;
 			BuildingBox.Name = "BuildingBox";
 			BuildingBox.Size = new Size(180, 23);
 			BuildingBox.TabIndex = 20;
@@ -188,6 +193,7 @@
 			// HouseBox
 			// 
 			HouseBox.Location = new Point(6, 186);
+			HouseBox.MaxLength = 5;
 			HouseBox.Name = "HouseBox";
 			HouseBox.Size = new Size(180, 23);
 			HouseBox.TabIndex = 18;
@@ -205,6 +211,7 @@
 			// StreetBox
 			// 
 			StreetBox.Location = new Point(6, 133);
+			StreetBox.MaxLength = 40;
 			StreetBox.Name = "StreetBox";
 			StreetBox.Size = new Size(180, 23);
 			StreetBox.TabIndex = 16;
@@ -222,6 +229,7 @@
 			// CityBox
 			// 
 			CityBox.Location = new Point(6, 83);
+			CityBox.MaxLength = 40;
 			CityBox.Name = "CityBox";
 			CityBox.Size = new Size(180, 23);
 			CityBox.TabIndex = 14;
@@ -239,6 +247,7 @@
 			// RegionBox
 			// 
 			RegionBox.Location = new Point(6, 36);
+			RegionBox.MaxLength = 40;
 			RegionBox.Name = "RegionBox";
 			RegionBox.Size = new Size(180, 23);
 			RegionBox.TabIndex = 0;
