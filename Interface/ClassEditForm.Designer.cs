@@ -81,6 +81,7 @@
 			// ClassNameBox
 			// 
 			ClassNameBox.Location = new Point(17, 27);
+			ClassNameBox.MaxLength = 60;
 			ClassNameBox.Name = "ClassNameBox";
 			ClassNameBox.Size = new Size(189, 23);
 			ClassNameBox.TabIndex = 4;
