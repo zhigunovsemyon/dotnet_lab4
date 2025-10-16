@@ -73,19 +73,19 @@ namespace Interface
 				return;
 			}
 
-			if (form.@class == null) {
+			if (form.Class == null) {
 				MessageBox.Show(
 					"ClassEditForm вернула null",
 					"Внутренняя ошибка"
 				);
 				return;
 			}
-			if (!form.@class.IsValid) {
+			if (!form.Class.IsValid) {
 				MessageBox.Show("Неправильно указаны данные!");
 				return;
 			}
 
-			this.@class_ = form.@class;
+			this.@class_ = form.Class;
 		}
 
 		/// <summary> Обработчик создания нового занятия </summary>

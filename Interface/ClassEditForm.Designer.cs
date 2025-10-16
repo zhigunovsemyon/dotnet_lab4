@@ -31,15 +31,15 @@
 			label2 = new Label();
 			label3 = new Label();
 			label4 = new Label();
-			ClassNameBox = new TextBox();
-			LectionsInput = new NumericUpDown();
-			PracticeInput = new NumericUpDown();
-			LabsInput = new NumericUpDown();
-			OkButton = new Button();
-			CloseButton = new Button();
-			((System.ComponentModel.ISupportInitialize)LectionsInput).BeginInit();
-			((System.ComponentModel.ISupportInitialize)PracticeInput).BeginInit();
-			((System.ComponentModel.ISupportInitialize)LabsInput).BeginInit();
+			TextBoxName = new TextBox();
+			NumericUpDownLectionsInput = new NumericUpDown();
+			NumericUpDownPracticeInput = new NumericUpDown();
+			NumericUpDownLabsInput = new NumericUpDown();
+			ButtonOK = new Button();
+			ButtonClose = new Button();
+			((System.ComponentModel.ISupportInitialize)NumericUpDownLectionsInput).BeginInit();
+			((System.ComponentModel.ISupportInitialize)NumericUpDownPracticeInput).BeginInit();
+			((System.ComponentModel.ISupportInitialize)NumericUpDownLabsInput).BeginInit();
 			SuspendLayout();
 			// 
 			// label1
@@ -78,68 +78,68 @@
 			label4.TabIndex = 3;
 			label4.Text = "Количество лабораторных работ";
 			// 
-			// ClassNameBox
+			// TextBoxName
 			// 
-			ClassNameBox.Location = new Point(17, 27);
-			ClassNameBox.MaxLength = 60;
-			ClassNameBox.Name = "ClassNameBox";
-			ClassNameBox.Size = new Size(189, 23);
-			ClassNameBox.TabIndex = 4;
-			ClassNameBox.LostFocus += ClassNameBox_LostFocus;
+			TextBoxName.Location = new Point(17, 27);
+			TextBoxName.MaxLength = 60;
+			TextBoxName.Name = "TextBoxName";
+			TextBoxName.Size = new Size(189, 23);
+			TextBoxName.TabIndex = 4;
+			TextBoxName.LostFocus += ClassNameBox_LostFocus;
 			// 
-			// LectionsInput
+			// NumericUpDownLectionsInput
 			// 
-			LectionsInput.Location = new Point(17, 71);
-			LectionsInput.Name = "LectionsInput";
-			LectionsInput.Size = new Size(190, 23);
-			LectionsInput.TabIndex = 5;
+			NumericUpDownLectionsInput.Location = new Point(17, 71);
+			NumericUpDownLectionsInput.Name = "NumericUpDownLectionsInput";
+			NumericUpDownLectionsInput.Size = new Size(190, 23);
+			NumericUpDownLectionsInput.TabIndex = 5;
 			// 
-			// PracticeInput
+			// NumericUpDownPracticeInput
 			// 
-			PracticeInput.Location = new Point(223, 27);
-			PracticeInput.Name = "PracticeInput";
-			PracticeInput.Size = new Size(190, 23);
-			PracticeInput.TabIndex = 6;
+			NumericUpDownPracticeInput.Location = new Point(223, 27);
+			NumericUpDownPracticeInput.Name = "NumericUpDownPracticeInput";
+			NumericUpDownPracticeInput.Size = new Size(190, 23);
+			NumericUpDownPracticeInput.TabIndex = 6;
 			// 
-			// LabsInput
+			// NumericUpDownLabsInput
 			// 
-			LabsInput.Location = new Point(222, 71);
-			LabsInput.Name = "LabsInput";
-			LabsInput.Size = new Size(190, 23);
-			LabsInput.TabIndex = 7;
+			NumericUpDownLabsInput.Location = new Point(222, 71);
+			NumericUpDownLabsInput.Name = "NumericUpDownLabsInput";
+			NumericUpDownLabsInput.Size = new Size(190, 23);
+			NumericUpDownLabsInput.TabIndex = 7;
 			// 
-			// OkButton
+			// ButtonOK
 			// 
-			OkButton.Location = new Point(222, 115);
-			OkButton.Name = "OkButton";
-			OkButton.Size = new Size(95, 23);
-			OkButton.TabIndex = 8;
-			OkButton.Text = "ОК";
-			OkButton.UseVisualStyleBackColor = true;
-			OkButton.Click += OkButton_Click;
+			ButtonOK.Location = new Point(222, 115);
+			ButtonOK.Name = "ButtonOK";
+			ButtonOK.Size = new Size(95, 23);
+			ButtonOK.TabIndex = 8;
+			ButtonOK.Text = "ОК";
+			ButtonOK.UseVisualStyleBackColor = true;
+			ButtonOK.Click += OkButton_Click;
 			// 
-			// CloseButton
+			// ButtonClose
 			// 
-			CloseButton.Location = new Point(323, 115);
-			CloseButton.Name = "CloseButton";
-			CloseButton.Size = new Size(89, 23);
-			CloseButton.TabIndex = 9;
-			CloseButton.Text = "Закрыть";
-			CloseButton.UseVisualStyleBackColor = true;
+			ButtonClose.Location = new Point(323, 115);
+			ButtonClose.Name = "ButtonClose";
+			ButtonClose.Size = new Size(89, 23);
+			ButtonClose.TabIndex = 9;
+			ButtonClose.Text = "Закрыть";
+			ButtonClose.UseVisualStyleBackColor = true;
 			// 
 			// ClassEditForm
 			// 
-			AcceptButton = OkButton;
+			AcceptButton = ButtonOK;
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
-			CancelButton = CloseButton;
+			CancelButton = ButtonClose;
 			ClientSize = new Size(433, 162);
-			Controls.Add(CloseButton);
-			Controls.Add(OkButton);
-			Controls.Add(LabsInput);
-			Controls.Add(PracticeInput);
-			Controls.Add(LectionsInput);
-			Controls.Add(ClassNameBox);
+			Controls.Add(ButtonClose);
+			Controls.Add(ButtonOK);
+			Controls.Add(NumericUpDownLabsInput);
+			Controls.Add(NumericUpDownPracticeInput);
+			Controls.Add(NumericUpDownLectionsInput);
+			Controls.Add(TextBoxName);
 			Controls.Add(label4);
 			Controls.Add(label3);
 			Controls.Add(label2);
@@ -149,10 +149,10 @@
 			Name = "ClassEditForm";
 			ShowIcon = false;
 			Text = "Информация о предмете";
-			Load += set_boxes;
-			((System.ComponentModel.ISupportInitialize)LectionsInput).EndInit();
-			((System.ComponentModel.ISupportInitialize)PracticeInput).EndInit();
-			((System.ComponentModel.ISupportInitialize)LabsInput).EndInit();
+			Load += SetBoxes;
+			((System.ComponentModel.ISupportInitialize)NumericUpDownLectionsInput).EndInit();
+			((System.ComponentModel.ISupportInitialize)NumericUpDownPracticeInput).EndInit();
+			((System.ComponentModel.ISupportInitialize)NumericUpDownLabsInput).EndInit();
 			ResumeLayout(false);
 			PerformLayout();
 		}
@@ -163,11 +163,11 @@
 		private Label label2;
 		private Label label3;
 		private Label label4;
-		private TextBox ClassNameBox;
-		private NumericUpDown LectionsInput;
-		private NumericUpDown PracticeInput;
-		private NumericUpDown LabsInput;
-		private Button OkButton;
-		private Button CloseButton;
+		private TextBox TextBoxName;
+		private NumericUpDown NumericUpDownLectionsInput;
+		private NumericUpDown NumericUpDownPracticeInput;
+		private NumericUpDown NumericUpDownLabsInput;
+		private Button ButtonOK;
+		private Button ButtonClose;
 	}
 }

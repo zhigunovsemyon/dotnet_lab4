@@ -8,40 +8,40 @@
 		public ClassEditForm(Electives.Class @class)
 		{
 			InitializeComponent();
-			this.@class = @class;
+			this.Class = @class;
 		}
 
 		/// <summary>
 		/// Обработчик по запуске формы. 
 		/// Наполняет поля формы данными из предмета, переданного в конструкторе
 		/// </summary>
-		private void set_boxes(object sender, EventArgs e)
+		private void SetBoxes(object sender, EventArgs e)
 		{
-			this.ClassNameBox.Text = this.@class.name;
-			this.LectionsInput.Value = this.@class.lections;
-			this.PracticeInput.Value = this.@class.practices;
-			this.LabsInput.Value = this.@class.lab_works;
+			this.TextBoxName.Text = this.Class.name;
+			this.NumericUpDownLectionsInput.Value = this.Class.lections;
+			this.NumericUpDownPracticeInput.Value = this.Class.practices;
+			this.NumericUpDownLabsInput.Value = this.Class.lab_works;
 		}
 
 		/// <summary>
 		/// Метод, заполняющий свойства предмета данными из полей формы.
 		/// Вызывается при нажатии пользователем кнопки "ОК"
 		/// </summary>
-		private void get_from_boxes()
+		private void GetFromBoxes()
 		{
-			this.@class.name = this.ClassNameBox.Text;
-			this.@class.lections = ((int)this.LectionsInput.Value);
-			this.@class.practices = ((int)this.PracticeInput.Value);
-			this.@class.lab_works = ((int)this.LabsInput.Value);
+			this.Class.name = this.TextBoxName.Text;
+			this.Class.lections = ((int)this.NumericUpDownLectionsInput.Value);
+			this.Class.practices = ((int)this.NumericUpDownPracticeInput.Value);
+			this.Class.lab_works = ((int)this.NumericUpDownLabsInput.Value);
 		}
 
 		/// <summary> Свойство с занятием, обрабатываемым данной формой </summary>
-		public Electives.Class @class { get; set; }
+		public Electives.Class Class { get; set; }
 
 		/// <summary> Обработчик нажатия пользователем клавиши "ОК" </summary>
 		private void OkButton_Click(object sender, EventArgs e)
 		{
-			get_from_boxes();
+			GetFromBoxes();
 
 			this.DialogResult = DialogResult.OK;
 			this.Close();
@@ -53,7 +53,7 @@
 		/// </summary>
 		private void ClassNameBox_LostFocus(object sender, EventArgs e)
 		{
-			this.ClassNameBox.Text = this.ClassNameBox.Text.Trim();
+			this.TextBoxName.Text = this.TextBoxName.Text.Trim();
 		}
 	}
 }
