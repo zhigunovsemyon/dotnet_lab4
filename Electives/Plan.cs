@@ -49,9 +49,9 @@
 
 		/// <summary> Создание копии текущего плана </summary>
 		/// <returns>Копия плана</returns>
-		public Plan clone ()
+		public Plan Сlone ()
 		{
-			return new Plan(Student.Clone(), Class.Clone(), new Mark(this.Mark.value));
+			return new Plan(Student.Clone(), Class.Clone(), new Mark(this.Mark.Value));
 		}
 	}
 }
