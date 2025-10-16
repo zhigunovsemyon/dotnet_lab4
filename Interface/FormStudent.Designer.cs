@@ -30,7 +30,6 @@
 			TextBoxSurname = new TextBox();
 			TextBoxName = new TextBox();
 			TextBoxPatronim = new TextBox();
-			TextBoxPhone = new TextBox();
 			label1 = new Label();
 			label2 = new Label();
 			label3 = new Label();
@@ -48,6 +47,7 @@
 			TextBoxCity = new TextBox();
 			label4 = new Label();
 			TextBoxRegion = new TextBox();
+			MaskedTextBoxPhone = new MaskedTextBox();
 			AddressBox.SuspendLayout();
 			SuspendLayout();
 			// 
@@ -77,15 +77,6 @@
 			TextBoxPatronim.Size = new Size(178, 23);
 			TextBoxPatronim.TabIndex = 2;
 			TextBoxPatronim.LostFocus += TextBoxTrimAll;
-			// 
-			// TextBoxPhone
-			// 
-			TextBoxPhone.Location = new Point(12, 185);
-			TextBoxPhone.MaxLength = 20;
-			TextBoxPhone.Name = "TextBoxPhone";
-			TextBoxPhone.Size = new Size(178, 23);
-			TextBoxPhone.TabIndex = 3;
-			TextBoxPhone.LostFocus += TextBoxTrimAll;
 			// 
 			// label1
 			// 
@@ -253,6 +244,14 @@
 			TextBoxRegion.TabIndex = 0;
 			TextBoxRegion.LostFocus += TextBoxTrimAll;
 			// 
+			// MaskedTextBoxPhone
+			// 
+			MaskedTextBoxPhone.Location = new Point(12, 185);
+			MaskedTextBoxPhone.Mask = "(999) 000-0000";
+			MaskedTextBoxPhone.Name = "MaskedTextBoxPhone";
+			MaskedTextBoxPhone.Size = new Size(178, 23);
+			MaskedTextBoxPhone.TabIndex = 3;
+			// 
 			// FormStudent
 			// 
 			AcceptButton = ButtonOK;
@@ -260,6 +259,7 @@
 			AutoScaleMode = AutoScaleMode.Font;
 			CancelButton = ButtonClose;
 			ClientSize = new Size(458, 278);
+			Controls.Add(MaskedTextBoxPhone);
 			Controls.Add(AddressBox);
 			Controls.Add(ButtonClose);
 			Controls.Add(ButtonOK);
@@ -267,7 +267,6 @@
 			Controls.Add(label3);
 			Controls.Add(label2);
 			Controls.Add(label1);
-			Controls.Add(TextBoxPhone);
 			Controls.Add(TextBoxPatronim);
 			Controls.Add(TextBoxName);
 			Controls.Add(TextBoxSurname);
@@ -288,7 +287,6 @@
 		private TextBox TextBoxSurname;
 		private TextBox TextBoxName;
 		private TextBox TextBoxPatronim;
-		private TextBox TextBoxPhone;
 		private Label label1;
 		private Label label2;
 		private Label label3;
@@ -306,5 +304,6 @@
 		private TextBox TextBoxHouse;
 		private Label label7;
 		private TextBox TextBoxStreet;
+		private MaskedTextBox MaskedTextBoxPhone;
 	}
 }

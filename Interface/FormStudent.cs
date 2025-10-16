@@ -20,7 +20,7 @@
 			this.TextBoxSurname.Text = this.Student.Surname;
 			this.TextBoxName.Text = this.Student.Name;
 			this.TextBoxPatronim.Text = this.Student.Patronim;
-			this.TextBoxPhone.Text = this.Student.Phone;
+			this.MaskedTextBoxPhone.Text = this.Student.Phone;
 
 			this.TextBoxRegion.Text = this.Student.Address.Region;
 			this.TextBoxCity.Text = this.Student.Address.City;
@@ -38,7 +38,7 @@
 			this.Student.Surname = this.TextBoxSurname.Text;
 			this.Student.Name = this.TextBoxName.Text;
 			this.Student.Patronim = this.TextBoxPatronim.Text;
-			this.Student.Phone = this.TextBoxPhone.Text;
+			this.Student.Phone = this.MaskedTextBoxPhone.Text;
 
 			this.Student.Address.Region = this.TextBoxRegion.Text;
 			this.Student.Address.City = this.TextBoxCity.Text;
@@ -66,7 +66,7 @@
 			this.TextBoxSurname.Text = this.TextBoxSurname.Text.Trim();
 			this.TextBoxName.Text = this.TextBoxName.Text.Trim();
 			this.TextBoxPatronim.Text = this.TextBoxPatronim.Text.Trim();
-			this.TextBoxPhone.Text = this.TextBoxPhone.Text.Trim();
+			this.MaskedTextBoxPhone.Text = this.MaskedTextBoxPhone.Text.Trim();
 
 			this.TextBoxRegion.Text = this.TextBoxRegion.Text.Trim();
 			this.TextBoxCity.Text = this.TextBoxCity.Text.Trim();
