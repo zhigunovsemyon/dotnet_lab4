@@ -17,10 +17,10 @@
 		/// </summary>
 		private void SetBoxes(object sender, EventArgs e)
 		{
-			this.TextBoxName.Text = this.Class.Name;
-			this.NumericUpDownLectionsInput.Value = this.Class.Lections;
-			this.NumericUpDownPracticeInput.Value = this.Class.Practices;
-			this.NumericUpDownLabsInput.Value = this.Class.LabWorks;
+			this.textBoxName.Text = this.Class.Name;
+			this.numericUpDownLectionsInput.Value = this.Class.Lections;
+			this.numericUpDownPracticeInput.Value = this.Class.Practices;
+			this.numericUpDownLabsInput.Value = this.Class.LabWorks;
 		}
 
 		/// <summary>
@@ -29,10 +29,10 @@
 		/// </summary>
 		private void GetFromBoxes()
 		{
-			this.Class.Name = this.TextBoxName.Text;
-			this.Class.Lections = ((int)this.NumericUpDownLectionsInput.Value);
-			this.Class.Practices = ((int)this.NumericUpDownPracticeInput.Value);
-			this.Class.LabWorks = ((int)this.NumericUpDownLabsInput.Value);
+			this.Class.Name = this.textBoxName.Text;
+			this.Class.Lections = ((int)this.numericUpDownLectionsInput.Value);
+			this.Class.Practices = ((int)this.numericUpDownPracticeInput.Value);
+			this.Class.LabWorks = ((int)this.numericUpDownLabsInput.Value);
 		}
 
 		/// <summary> Свойство с занятием, обрабатываемым данной формой </summary>
@@ -53,7 +53,7 @@
 		/// </summary>
 		private void ClassNameBox_LostFocus(object sender, EventArgs e)
 		{
-			this.TextBoxName.Text = this.TextBoxName.Text.Trim();
+			this.textBoxName.Text = this.textBoxName.Text.Trim();
 		}
 	}
 }

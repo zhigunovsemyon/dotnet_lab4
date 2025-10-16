@@ -31,15 +31,15 @@
 			label2 = new Label();
 			label3 = new Label();
 			label4 = new Label();
-			TextBoxName = new TextBox();
-			NumericUpDownLectionsInput = new NumericUpDown();
-			NumericUpDownPracticeInput = new NumericUpDown();
-			NumericUpDownLabsInput = new NumericUpDown();
-			ButtonOK = new Button();
-			ButtonClose = new Button();
-			((System.ComponentModel.ISupportInitialize)NumericUpDownLectionsInput).BeginInit();
-			((System.ComponentModel.ISupportInitialize)NumericUpDownPracticeInput).BeginInit();
-			((System.ComponentModel.ISupportInitialize)NumericUpDownLabsInput).BeginInit();
+			textBoxName = new TextBox();
+			numericUpDownLectionsInput = new NumericUpDown();
+			numericUpDownPracticeInput = new NumericUpDown();
+			numericUpDownLabsInput = new NumericUpDown();
+			buttonOK = new Button();
+			buttonClose = new Button();
+			((System.ComponentModel.ISupportInitialize)numericUpDownLectionsInput).BeginInit();
+			((System.ComponentModel.ISupportInitialize)numericUpDownPracticeInput).BeginInit();
+			((System.ComponentModel.ISupportInitialize)numericUpDownLabsInput).BeginInit();
 			SuspendLayout();
 			// 
 			// label1
@@ -78,81 +78,81 @@
 			label4.TabIndex = 3;
 			label4.Text = "Количество лабораторных работ";
 			// 
-			// TextBoxName
+			// textBoxName
 			// 
-			TextBoxName.Location = new Point(17, 27);
-			TextBoxName.MaxLength = 60;
-			TextBoxName.Name = "TextBoxName";
-			TextBoxName.Size = new Size(189, 23);
-			TextBoxName.TabIndex = 4;
-			TextBoxName.LostFocus += ClassNameBox_LostFocus;
+			textBoxName.Location = new Point(17, 27);
+			textBoxName.MaxLength = 60;
+			textBoxName.Name = "textBoxName";
+			textBoxName.Size = new Size(189, 23);
+			textBoxName.TabIndex = 4;
+			textBoxName.LostFocus += ClassNameBox_LostFocus;
 			// 
-			// NumericUpDownLectionsInput
+			// numericUpDownLectionsInput
 			// 
-			NumericUpDownLectionsInput.Location = new Point(17, 71);
-			NumericUpDownLectionsInput.Name = "NumericUpDownLectionsInput";
-			NumericUpDownLectionsInput.Size = new Size(190, 23);
-			NumericUpDownLectionsInput.TabIndex = 5;
+			numericUpDownLectionsInput.Location = new Point(17, 71);
+			numericUpDownLectionsInput.Name = "numericUpDownLectionsInput";
+			numericUpDownLectionsInput.Size = new Size(190, 23);
+			numericUpDownLectionsInput.TabIndex = 5;
 			// 
-			// NumericUpDownPracticeInput
+			// numericUpDownPracticeInput
 			// 
-			NumericUpDownPracticeInput.Location = new Point(223, 27);
-			NumericUpDownPracticeInput.Name = "NumericUpDownPracticeInput";
-			NumericUpDownPracticeInput.Size = new Size(190, 23);
-			NumericUpDownPracticeInput.TabIndex = 6;
+			numericUpDownPracticeInput.Location = new Point(223, 27);
+			numericUpDownPracticeInput.Name = "numericUpDownPracticeInput";
+			numericUpDownPracticeInput.Size = new Size(190, 23);
+			numericUpDownPracticeInput.TabIndex = 6;
 			// 
-			// NumericUpDownLabsInput
+			// numericUpDownLabsInput
 			// 
-			NumericUpDownLabsInput.Location = new Point(222, 71);
-			NumericUpDownLabsInput.Name = "NumericUpDownLabsInput";
-			NumericUpDownLabsInput.Size = new Size(190, 23);
-			NumericUpDownLabsInput.TabIndex = 7;
+			numericUpDownLabsInput.Location = new Point(222, 71);
+			numericUpDownLabsInput.Name = "numericUpDownLabsInput";
+			numericUpDownLabsInput.Size = new Size(190, 23);
+			numericUpDownLabsInput.TabIndex = 7;
 			// 
-			// ButtonOK
+			// buttonOK
 			// 
-			ButtonOK.Location = new Point(222, 115);
-			ButtonOK.Name = "ButtonOK";
-			ButtonOK.Size = new Size(95, 23);
-			ButtonOK.TabIndex = 8;
-			ButtonOK.Text = "ОК";
-			ButtonOK.UseVisualStyleBackColor = true;
-			ButtonOK.Click += OkButton_Click;
+			buttonOK.Location = new Point(222, 115);
+			buttonOK.Name = "buttonOK";
+			buttonOK.Size = new Size(95, 23);
+			buttonOK.TabIndex = 8;
+			buttonOK.Text = "ОК";
+			buttonOK.UseVisualStyleBackColor = true;
+			buttonOK.Click += OkButton_Click;
 			// 
-			// ButtonClose
+			// buttonClose
 			// 
-			ButtonClose.Location = new Point(323, 115);
-			ButtonClose.Name = "ButtonClose";
-			ButtonClose.Size = new Size(89, 23);
-			ButtonClose.TabIndex = 9;
-			ButtonClose.Text = "Закрыть";
-			ButtonClose.UseVisualStyleBackColor = true;
+			buttonClose.Location = new Point(323, 115);
+			buttonClose.Name = "buttonClose";
+			buttonClose.Size = new Size(89, 23);
+			buttonClose.TabIndex = 9;
+			buttonClose.Text = "Закрыть";
+			buttonClose.UseVisualStyleBackColor = true;
 			// 
-			// ClassEditForm
+			// FormClass
 			// 
-			AcceptButton = ButtonOK;
+			AcceptButton = buttonOK;
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
-			CancelButton = ButtonClose;
+			CancelButton = buttonClose;
 			ClientSize = new Size(433, 162);
-			Controls.Add(ButtonClose);
-			Controls.Add(ButtonOK);
-			Controls.Add(NumericUpDownLabsInput);
-			Controls.Add(NumericUpDownPracticeInput);
-			Controls.Add(NumericUpDownLectionsInput);
-			Controls.Add(TextBoxName);
+			Controls.Add(buttonClose);
+			Controls.Add(buttonOK);
+			Controls.Add(numericUpDownLabsInput);
+			Controls.Add(numericUpDownPracticeInput);
+			Controls.Add(numericUpDownLectionsInput);
+			Controls.Add(textBoxName);
 			Controls.Add(label4);
 			Controls.Add(label3);
 			Controls.Add(label2);
 			Controls.Add(label1);
 			FormBorderStyle = FormBorderStyle.FixedSingle;
 			MaximizeBox = false;
-			Name = "ClassEditForm";
+			Name = "FormClass";
 			ShowIcon = false;
 			Text = "Информация о предмете";
 			Load += SetBoxes;
-			((System.ComponentModel.ISupportInitialize)NumericUpDownLectionsInput).EndInit();
-			((System.ComponentModel.ISupportInitialize)NumericUpDownPracticeInput).EndInit();
-			((System.ComponentModel.ISupportInitialize)NumericUpDownLabsInput).EndInit();
+			((System.ComponentModel.ISupportInitialize)numericUpDownLectionsInput).EndInit();
+			((System.ComponentModel.ISupportInitialize)numericUpDownPracticeInput).EndInit();
+			((System.ComponentModel.ISupportInitialize)numericUpDownLabsInput).EndInit();
 			ResumeLayout(false);
 			PerformLayout();
 		}
@@ -163,11 +163,11 @@
 		private Label label2;
 		private Label label3;
 		private Label label4;
-		private TextBox TextBoxName;
-		private NumericUpDown NumericUpDownLectionsInput;
-		private NumericUpDown NumericUpDownPracticeInput;
-		private NumericUpDown NumericUpDownLabsInput;
-		private Button ButtonOK;
-		private Button ButtonClose;
+		private TextBox textBoxName;
+		private NumericUpDown numericUpDownLectionsInput;
+		private NumericUpDown numericUpDownPracticeInput;
+		private NumericUpDown numericUpDownLabsInput;
+		private Button buttonOK;
+		private Button buttonClose;
 	}
 }

@@ -27,56 +27,56 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			TextBoxSurname = new TextBox();
-			TextBoxName = new TextBox();
-			TextBoxPatronim = new TextBox();
+			textBoxSurname = new TextBox();
+			textBoxName = new TextBox();
+			textBoxPatronim = new TextBox();
 			label1 = new Label();
 			label2 = new Label();
 			label3 = new Label();
 			label5 = new Label();
-			ButtonOK = new Button();
-			ButtonClose = new Button();
+			buttonOK = new Button();
+			buttonClose = new Button();
 			AddressBox = new GroupBox();
 			label9 = new Label();
-			TextBoxBuilding = new TextBox();
+			textBoxBuilding = new TextBox();
 			label8 = new Label();
-			TextBoxHouse = new TextBox();
+			textBoxHouse = new TextBox();
 			label7 = new Label();
-			TextBoxStreet = new TextBox();
+			textBoxStreet = new TextBox();
 			label6 = new Label();
-			TextBoxCity = new TextBox();
+			textBoxCity = new TextBox();
 			label4 = new Label();
-			TextBoxRegion = new TextBox();
-			MaskedTextBoxPhone = new MaskedTextBox();
+			textBoxRegion = new TextBox();
+			maskedTextBoxPhone = new MaskedTextBox();
 			AddressBox.SuspendLayout();
 			SuspendLayout();
 			// 
-			// TextBoxSurname
+			// textBoxSurname
 			// 
-			TextBoxSurname.Location = new Point(12, 35);
-			TextBoxSurname.MaxLength = 40;
-			TextBoxSurname.Name = "TextBoxSurname";
-			TextBoxSurname.Size = new Size(178, 23);
-			TextBoxSurname.TabIndex = 0;
-			TextBoxSurname.LostFocus += TextBoxTrimAll;
+			textBoxSurname.Location = new Point(12, 35);
+			textBoxSurname.MaxLength = 40;
+			textBoxSurname.Name = "textBoxSurname";
+			textBoxSurname.Size = new Size(178, 23);
+			textBoxSurname.TabIndex = 0;
+			textBoxSurname.LostFocus += TextBoxTrimAll;
 			// 
-			// TextBoxName
+			// textBoxName
 			// 
-			TextBoxName.Location = new Point(12, 82);
-			TextBoxName.MaxLength = 28;
-			TextBoxName.Name = "TextBoxName";
-			TextBoxName.Size = new Size(178, 23);
-			TextBoxName.TabIndex = 1;
-			TextBoxName.LostFocus += TextBoxTrimAll;
+			textBoxName.Location = new Point(12, 82);
+			textBoxName.MaxLength = 28;
+			textBoxName.Name = "textBoxName";
+			textBoxName.Size = new Size(178, 23);
+			textBoxName.TabIndex = 1;
+			textBoxName.LostFocus += TextBoxTrimAll;
 			// 
-			// TextBoxPatronim
+			// textBoxPatronim
 			// 
-			TextBoxPatronim.Location = new Point(12, 132);
-			TextBoxPatronim.MaxLength = 28;
-			TextBoxPatronim.Name = "TextBoxPatronim";
-			TextBoxPatronim.Size = new Size(178, 23);
-			TextBoxPatronim.TabIndex = 2;
-			TextBoxPatronim.LostFocus += TextBoxTrimAll;
+			textBoxPatronim.Location = new Point(12, 132);
+			textBoxPatronim.MaxLength = 28;
+			textBoxPatronim.Name = "textBoxPatronim";
+			textBoxPatronim.Size = new Size(178, 23);
+			textBoxPatronim.TabIndex = 2;
+			textBoxPatronim.LostFocus += TextBoxTrimAll;
 			// 
 			// label1
 			// 
@@ -114,39 +114,39 @@
 			label5.TabIndex = 9;
 			label5.Text = "&Телефон";
 			// 
-			// ButtonOK
+			// buttonOK
 			// 
-			ButtonOK.DialogResult = DialogResult.OK;
-			ButtonOK.Location = new Point(280, 243);
-			ButtonOK.Name = "ButtonOK";
-			ButtonOK.Size = new Size(75, 23);
-			ButtonOK.TabIndex = 11;
-			ButtonOK.Text = "OK";
-			ButtonOK.UseVisualStyleBackColor = true;
-			ButtonOK.Click += ok_button_Click;
+			buttonOK.DialogResult = DialogResult.OK;
+			buttonOK.Location = new Point(280, 243);
+			buttonOK.Name = "buttonOK";
+			buttonOK.Size = new Size(75, 23);
+			buttonOK.TabIndex = 11;
+			buttonOK.Text = "OK";
+			buttonOK.UseVisualStyleBackColor = true;
+			buttonOK.Click += ok_button_Click;
 			// 
-			// ButtonClose
+			// buttonClose
 			// 
-			ButtonClose.DialogResult = DialogResult.Cancel;
-			ButtonClose.Location = new Point(361, 243);
-			ButtonClose.Name = "ButtonClose";
-			ButtonClose.Size = new Size(75, 23);
-			ButtonClose.TabIndex = 12;
-			ButtonClose.Text = "Закрыть";
-			ButtonClose.UseVisualStyleBackColor = true;
+			buttonClose.DialogResult = DialogResult.Cancel;
+			buttonClose.Location = new Point(361, 243);
+			buttonClose.Name = "buttonClose";
+			buttonClose.Size = new Size(75, 23);
+			buttonClose.TabIndex = 12;
+			buttonClose.Text = "Закрыть";
+			buttonClose.UseVisualStyleBackColor = true;
 			// 
 			// AddressBox
 			// 
 			AddressBox.Controls.Add(label9);
-			AddressBox.Controls.Add(TextBoxBuilding);
+			AddressBox.Controls.Add(textBoxBuilding);
 			AddressBox.Controls.Add(label8);
-			AddressBox.Controls.Add(TextBoxHouse);
+			AddressBox.Controls.Add(textBoxHouse);
 			AddressBox.Controls.Add(label7);
-			AddressBox.Controls.Add(TextBoxStreet);
+			AddressBox.Controls.Add(textBoxStreet);
 			AddressBox.Controls.Add(label6);
-			AddressBox.Controls.Add(TextBoxCity);
+			AddressBox.Controls.Add(textBoxCity);
 			AddressBox.Controls.Add(label4);
-			AddressBox.Controls.Add(TextBoxRegion);
+			AddressBox.Controls.Add(textBoxRegion);
 			AddressBox.Location = new Point(205, 0);
 			AddressBox.Name = "AddressBox";
 			AddressBox.Size = new Size(250, 226);
@@ -163,14 +163,14 @@
 			label9.TabIndex = 21;
 			label9.Text = "&Строение (необязательно)";
 			// 
-			// TextBoxBuilding
+			// textBoxBuilding
 			// 
-			TextBoxBuilding.Location = new Point(88, 186);
-			TextBoxBuilding.MaxLength = 5;
-			TextBoxBuilding.Name = "TextBoxBuilding";
-			TextBoxBuilding.Size = new Size(146, 23);
-			TextBoxBuilding.TabIndex = 20;
-			TextBoxBuilding.LostFocus += TextBoxTrimAll;
+			textBoxBuilding.Location = new Point(88, 186);
+			textBoxBuilding.MaxLength = 5;
+			textBoxBuilding.Name = "textBoxBuilding";
+			textBoxBuilding.Size = new Size(146, 23);
+			textBoxBuilding.TabIndex = 20;
+			textBoxBuilding.LostFocus += TextBoxTrimAll;
 			// 
 			// label8
 			// 
@@ -181,14 +181,14 @@
 			label8.TabIndex = 19;
 			label8.Text = "&Номер дома";
 			// 
-			// TextBoxHouse
+			// textBoxHouse
 			// 
-			TextBoxHouse.Location = new Point(6, 186);
-			TextBoxHouse.MaxLength = 5;
-			TextBoxHouse.Name = "TextBoxHouse";
-			TextBoxHouse.Size = new Size(76, 23);
-			TextBoxHouse.TabIndex = 18;
-			TextBoxHouse.LostFocus += TextBoxTrimAll;
+			textBoxHouse.Location = new Point(6, 186);
+			textBoxHouse.MaxLength = 5;
+			textBoxHouse.Name = "textBoxHouse";
+			textBoxHouse.Size = new Size(76, 23);
+			textBoxHouse.TabIndex = 18;
+			textBoxHouse.LostFocus += TextBoxTrimAll;
 			// 
 			// label7
 			// 
@@ -199,14 +199,14 @@
 			label7.TabIndex = 17;
 			label7.Text = "&Улица";
 			// 
-			// TextBoxStreet
+			// textBoxStreet
 			// 
-			TextBoxStreet.Location = new Point(6, 133);
-			TextBoxStreet.MaxLength = 40;
-			TextBoxStreet.Name = "TextBoxStreet";
-			TextBoxStreet.Size = new Size(228, 23);
-			TextBoxStreet.TabIndex = 16;
-			TextBoxStreet.LostFocus += TextBoxTrimAll;
+			textBoxStreet.Location = new Point(6, 133);
+			textBoxStreet.MaxLength = 40;
+			textBoxStreet.Name = "textBoxStreet";
+			textBoxStreet.Size = new Size(228, 23);
+			textBoxStreet.TabIndex = 16;
+			textBoxStreet.LostFocus += TextBoxTrimAll;
 			// 
 			// label6
 			// 
@@ -217,14 +217,14 @@
 			label6.TabIndex = 15;
 			label6.Text = "&Город";
 			// 
-			// TextBoxCity
+			// textBoxCity
 			// 
-			TextBoxCity.Location = new Point(6, 83);
-			TextBoxCity.MaxLength = 40;
-			TextBoxCity.Name = "TextBoxCity";
-			TextBoxCity.Size = new Size(228, 23);
-			TextBoxCity.TabIndex = 14;
-			TextBoxCity.LostFocus += TextBoxTrimAll;
+			textBoxCity.Location = new Point(6, 83);
+			textBoxCity.MaxLength = 40;
+			textBoxCity.Name = "textBoxCity";
+			textBoxCity.Size = new Size(228, 23);
+			textBoxCity.TabIndex = 14;
+			textBoxCity.LostFocus += TextBoxTrimAll;
 			// 
 			// label4
 			// 
@@ -235,41 +235,41 @@
 			label4.TabIndex = 13;
 			label4.Text = "&Регион";
 			// 
-			// TextBoxRegion
+			// textBoxRegion
 			// 
-			TextBoxRegion.Location = new Point(6, 36);
-			TextBoxRegion.MaxLength = 40;
-			TextBoxRegion.Name = "TextBoxRegion";
-			TextBoxRegion.Size = new Size(228, 23);
-			TextBoxRegion.TabIndex = 0;
-			TextBoxRegion.LostFocus += TextBoxTrimAll;
+			textBoxRegion.Location = new Point(6, 36);
+			textBoxRegion.MaxLength = 40;
+			textBoxRegion.Name = "textBoxRegion";
+			textBoxRegion.Size = new Size(228, 23);
+			textBoxRegion.TabIndex = 0;
+			textBoxRegion.LostFocus += TextBoxTrimAll;
 			// 
-			// MaskedTextBoxPhone
+			// maskedTextBoxPhone
 			// 
-			MaskedTextBoxPhone.Location = new Point(12, 185);
-			MaskedTextBoxPhone.Mask = "(999) 000-0000";
-			MaskedTextBoxPhone.Name = "MaskedTextBoxPhone";
-			MaskedTextBoxPhone.Size = new Size(178, 23);
-			MaskedTextBoxPhone.TabIndex = 3;
+			maskedTextBoxPhone.Location = new Point(12, 185);
+			maskedTextBoxPhone.Mask = "(999) 000-0000";
+			maskedTextBoxPhone.Name = "maskedTextBoxPhone";
+			maskedTextBoxPhone.Size = new Size(178, 23);
+			maskedTextBoxPhone.TabIndex = 3;
 			// 
 			// FormStudent
 			// 
-			AcceptButton = ButtonOK;
+			AcceptButton = buttonOK;
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
-			CancelButton = ButtonClose;
+			CancelButton = buttonClose;
 			ClientSize = new Size(458, 278);
-			Controls.Add(MaskedTextBoxPhone);
+			Controls.Add(maskedTextBoxPhone);
 			Controls.Add(AddressBox);
-			Controls.Add(ButtonClose);
-			Controls.Add(ButtonOK);
+			Controls.Add(buttonClose);
+			Controls.Add(buttonOK);
 			Controls.Add(label5);
 			Controls.Add(label3);
 			Controls.Add(label2);
 			Controls.Add(label1);
-			Controls.Add(TextBoxPatronim);
-			Controls.Add(TextBoxName);
-			Controls.Add(TextBoxSurname);
+			Controls.Add(textBoxPatronim);
+			Controls.Add(textBoxName);
+			Controls.Add(textBoxSurname);
 			FormBorderStyle = FormBorderStyle.FixedDialog;
 			MaximizeBox = false;
 			Name = "FormStudent";
@@ -284,26 +284,26 @@
 
 		#endregion
 
-		private TextBox TextBoxSurname;
-		private TextBox TextBoxName;
-		private TextBox TextBoxPatronim;
+		private TextBox textBoxSurname;
+		private TextBox textBoxName;
+		private TextBox textBoxPatronim;
 		private Label label1;
 		private Label label2;
 		private Label label3;
 		private Label label5;
-		private Button ButtonOK;
-		private Button ButtonClose;
+		private Button buttonOK;
+		private Button buttonClose;
 		private GroupBox AddressBox;
 		private Label label6;
-		private TextBox TextBoxCity;
+		private TextBox textBoxCity;
 		private Label label4;
-		private TextBox TextBoxRegion;
+		private TextBox textBoxRegion;
 		private Label label9;
-		private TextBox TextBoxBuilding;
+		private TextBox textBoxBuilding;
 		private Label label8;
-		private TextBox TextBoxHouse;
+		private TextBox textBoxHouse;
 		private Label label7;
-		private TextBox TextBoxStreet;
-		private MaskedTextBox MaskedTextBoxPhone;
+		private TextBox textBoxStreet;
+		private MaskedTextBox maskedTextBoxPhone;
 	}
 }
