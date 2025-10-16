@@ -16,7 +16,7 @@
 
 		public override string ToString ()
 		{
-			return $"{Student}, предмет: {Class.name}, оценка {Mark}";
+			return $"{Student}, предмет: {Class.Name}, оценка {Mark}";
 		}
 
 		/// <summary>
@@ -51,7 +51,7 @@
 		/// <returns>Копия плана</returns>
 		public Plan clone ()
 		{
-			return new Plan(Student.Clone(), Class.clone(), new Mark(this.Mark.value));
+			return new Plan(Student.Clone(), Class.Clone(), new Mark(this.Mark.value));
 		}
 	}
 }

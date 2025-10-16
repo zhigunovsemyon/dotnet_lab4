@@ -17,10 +17,10 @@
 		/// </summary>
 		private void SetBoxes(object sender, EventArgs e)
 		{
-			this.TextBoxName.Text = this.Class.name;
-			this.NumericUpDownLectionsInput.Value = this.Class.lections;
-			this.NumericUpDownPracticeInput.Value = this.Class.practices;
-			this.NumericUpDownLabsInput.Value = this.Class.lab_works;
+			this.TextBoxName.Text = this.Class.Name;
+			this.NumericUpDownLectionsInput.Value = this.Class.Lections;
+			this.NumericUpDownPracticeInput.Value = this.Class.Practices;
+			this.NumericUpDownLabsInput.Value = this.Class.LabWorks;
 		}
 
 		/// <summary>
@@ -29,10 +29,10 @@
 		/// </summary>
 		private void GetFromBoxes()
 		{
-			this.Class.name = this.TextBoxName.Text;
-			this.Class.lections = ((int)this.NumericUpDownLectionsInput.Value);
-			this.Class.practices = ((int)this.NumericUpDownPracticeInput.Value);
-			this.Class.lab_works = ((int)this.NumericUpDownLabsInput.Value);
+			this.Class.Name = this.TextBoxName.Text;
+			this.Class.Lections = ((int)this.NumericUpDownLectionsInput.Value);
+			this.Class.Practices = ((int)this.NumericUpDownPracticeInput.Value);
+			this.Class.LabWorks = ((int)this.NumericUpDownLabsInput.Value);
 		}
 
 		/// <summary> Свойство с занятием, обрабатываемым данной формой </summary>

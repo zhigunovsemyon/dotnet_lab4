@@ -97,7 +97,7 @@ namespace Interface
 		/// <summary> Обработчик редактирования существующего занятия </summary>
 		private void ClassEditStripMenuItem_Click (object sender, EventArgs e)
 		{
-			AddOrEditClass(class_.clone());
+			AddOrEditClass(class_.Clone());
 		}
 	}
 }
