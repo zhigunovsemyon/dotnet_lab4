@@ -57,7 +57,7 @@
 		{
 			return new Student
 			{
-				Address = this.Address.clone(),
+				Address = this.Address.Clone(),
 				Name = this.Name,
 				Surname = this.Surname,
 				Patronim = this.Patronim,

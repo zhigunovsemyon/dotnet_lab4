@@ -22,11 +22,11 @@
 			this.PatronimBox.Text = this.student.Patronim;
 			this.PhoneBox.Text = this.student.Phone;
 
-			this.RegionBox.Text = this.student.Address.region;
-			this.CityBox.Text = this.student.Address.city;
-			this.StreetBox.Text = this.student.Address.street;
-			this.HouseBox.Text = this.student.Address.house;
-			this.BuildingBox.Text = this.student.Address.building;
+			this.RegionBox.Text = this.student.Address.Region;
+			this.CityBox.Text = this.student.Address.City;
+			this.StreetBox.Text = this.student.Address.Street;
+			this.HouseBox.Text = this.student.Address.House;
+			this.BuildingBox.Text = this.student.Address.Building;
 		}
 
 		/// <summary>
@@ -40,11 +40,11 @@
 			this.student.Patronim = this.PatronimBox.Text;
 			this.student.Phone = this.PhoneBox.Text;
 
-			this.student.Address.region = this.RegionBox.Text;
-			this.student.Address.city = this.CityBox.Text;
-			this.student.Address.street = this.StreetBox.Text;
-			this.student.Address.house = this.HouseBox.Text;
-			this.student.Address.building = this.BuildingBox.Text;
+			this.student.Address.Region = this.RegionBox.Text;
+			this.student.Address.City = this.CityBox.Text;
+			this.student.Address.Street = this.StreetBox.Text;
+			this.student.Address.House = this.HouseBox.Text;
+			this.student.Address.Building = this.BuildingBox.Text;
 		}
 
 		/// <summary> Обрабатываемый формой студент </summary>
