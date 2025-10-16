@@ -1,11 +1,11 @@
 ﻿namespace Interface
 {
 	/// <summary> Форма изменения информации о занятии </summary>
-	public partial class ClassEditForm : Form
+	public partial class FormClass : Form
 	{
 		/// <summary> Конструктор формы </summary>
 		/// <param name="class">Обрабатываемое занятие</param>
-		public ClassEditForm(Electives.Class @class)
+		public FormClass(Electives.Class @class)
 		{
 			InitializeComponent();
 			this.Class = @class;

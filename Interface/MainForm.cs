@@ -28,24 +28,24 @@ namespace Interface
 		/// <param name="student">Обрабатываемый студент</param>
 		private void AddOrEditStudent (Electives.Student student)
 		{
-			var form = new StudentEditForm(student);
+			var form = new FormStudent(student);
 			if (DialogResult.OK != form.ShowDialog()) {
 				return;
 			}
 
-			if (form.student == null) {
+			if (form.Student == null) {
 				MessageBox.Show(
 					"StudentEditForm вернула null",
 					"Внутренняя ошибка"
 				);
 				return;
 			}
-			if (!form.student.IsValid) {
+			if (!form.Student.IsValid) {
 				MessageBox.Show("Неправильно указаны данные!");
 				return;
 			}
 
-			this.student_ = form.student;
+			this.student_ = form.Student;
 		}
 
 		/// <summary> Обработчик поля создания нового студента </summary>
@@ -68,7 +68,7 @@ namespace Interface
 		/// <param name="class">Обрабатываемое занятие</param>
 		private void AddOrEditClass(Electives.Class @class)
 		{			
-			var form = new ClassEditForm(@class);
+			var form = new FormClass(@class);
 			if (DialogResult.OK != form.ShowDialog()) {
 				return;
 			}

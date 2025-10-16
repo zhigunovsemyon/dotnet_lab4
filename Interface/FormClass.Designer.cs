@@ -1,6 +1,6 @@
 ﻿namespace Interface
 {
-	partial class ClassEditForm
+	partial class FormClass
 	{
 		/// <summary>
 		/// Required designer variable.
