@@ -53,7 +53,7 @@
 
 		/// <summary> Создание копии данного студента </summary>
 		/// <returns>Копия студента</returns>
-		public Student clone()
+		public Student Clone()
 		{
 			return new Student
 			{

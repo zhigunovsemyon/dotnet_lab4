@@ -59,7 +59,7 @@ namespace Interface
 		private void StudentEditToolStripMenuItem_Click (object sender, EventArgs e)
 		{
 			//Вызов формы на копии исходного студента
-			AddOrEditStudent(student_.clone());
+			AddOrEditStudent(student_.Clone());
 		}
 
 		/// <summary>

@@ -51,7 +51,7 @@
 		/// <returns>Копия плана</returns>
 		public Plan clone ()
 		{
-			return new Plan(Student.clone(), Class.clone(), new Mark(this.Mark.value));
+			return new Plan(Student.Clone(), Class.clone(), new Mark(this.Mark.value));
 		}
 	}
 }
